@@ -1,0 +1,33 @@
+#
+# Konfigurační soubor pro CoreModule.
+#
+parameters:
+	defaultItemUrl: uvod          # URL výchozí položky
+	contactEmail: admin@localhost.cz # Kontaktní email
+
+
+# Nastavení služeb pro CoreModule.
+services:
+	# Nastavení služby pro oprávnění uživatelů v rámci CoreModule (ACL).
+	security.authorizator:
+		setup:
+			# Zdroje CoreModule.
+			- addResource(Core:Administration)
+			- addResource(Core:Item)
+			- addResource(Core:Contact)
+
+			# Pravidla přístupu.
+			- allow(guest, Core:Administration, login)
+			- allow(guest, Core:Administration, register)
+			- allow(guest, Core:Item, default)
+			- allow(guest, Core:Item, list)
+			- allow(guest, Core:Contact)
+			- allow(member, Core:Administration, default)
+			- allow(member, Core:Administration, logout)
+
+	# Definice vlastních služeb dále přístupných pomocí DI.
+	- App\CoreModule\Model\ItemManager
+
+	# Předání nastavení při vytváření služeb presenterů.
+	- App\CoreModule\Presenters\ItemPresenter(%defaultItemUrl%)
+	- App\CoreModule\Presenters\ContactPresenter(%contactEmail%)

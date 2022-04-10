@@ -1,0 +1,19 @@
+{block title}Výpis položek{/block}
+{block description}Výpis všech položek.{/block}
+{block content}
+<table>
+     <thead>    
+    <tr><th>Jméno</th><th>Příjmení</th><th>Datum narození</th><th>Superschopnost</th>{if $user->isInRole('admin')}<th colspan="2">Administrace</th>
+    </tr>{/if}   
+ </thead>
+    <tbody n:foreach="$items as $item">
+        <tr>
+            <h2><a n:href="Item: $item->item_id"></a></h2>
+            <td>{$item->name}</td><td>{$item->surname}</td><td>{$item->birthdate|dateCzech}</td><td>{$item->superpower}</td>
+            <br/>
+            {if $user->isInRole('admin')}
+                <td><a n:href="editor $item->item_id">Editovat</a></td>
+                <td><a n:href="remove $item->item_id">Odstranit</a></td>
+            {/if}
+   </tr>  </tbody>       
+</table>

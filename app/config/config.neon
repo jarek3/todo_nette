@@ -1,0 +1,63 @@
+#
+# Hlavní konfigurační soubor aplikace.
+#
+parameters:
+
+
+# Nastavení aplikace.
+application:
+	errorPresenter: Error # Presenter pro zpracování chyb a výjimek v aplikaci.
+	catchExceptions: yes  # Vždy směrovat výjimky na ErrorPresenter (standartně jdou na laděnku).
+	mapping:              # Konfigurace vyhledávání cesty k prezenterům.
+		*: App\*Module\Presenters\*Presenter
+
+
+# Nastavení expirace sessions v rámci celé aplikace.
+session:
+	expiration: 14 days
+
+
+# Konfigurace databázového připojení v rámci celé aplikace.
+database:
+	dsn: 'mysql:host=127.0.0.1;dbname=cosmonauts' # Typ, adresa a název databáze
+	user: root     # Uživatelské jméno
+	password:  # Heslo
+	options:
+		lazy: yes
+
+
+# Nastavení výchozích chybových hlášek pro formuláře.
+forms:
+	messages:
+		REQUIRED: 'Povinné pole.'
+		EMAIL: 'Neplatná emailová adresa.'
+
+
+# Nastavení společných uživatelských rolí v rámci celé aplikace (ACL).
+security:
+	roles:
+		guest:
+		member: [guest]
+		admin:
+
+
+# Nastavení služeb v rámci celé aplikace.
+services:
+	router: App\RouterFactory::createRouter # Nastavení služby routeru aplikace.
+	authenticator: App\Model\UserManager    # Nastavení služby pro přihlašování do aplikace.
+	security.authorizator:                  # Nastavení služby pro opravní uživatelů aplikace (ACL).
+	    setup:
+	        # Zdroje aplikace.
+	        - addResource(Error)
+
+	        # Pravidla přístupu.
+	        - allow(admin) # Administrátor může všechno.
+	        - allow(guest, Error)
+
+	# Definice továren dále přístupných pomocí DI.
+	- App\Forms\FormFactory
+	- App\Forms\SignInFormFactory
+	- App\Forms\SignUpFormFactory	
+	- Nette\Utils\DateTime        
+includes:
+	- ../CoreModule/config/config.neon # Načtení konfigurace z CoreModule.

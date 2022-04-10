@@ -1,0 +1,62 @@
+{**
+ * @param string   $basePath web base path
+ * @param array    $flashes  flash messages
+ *}
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="{include description|striptags}">
+
+	<title>{include title|striptags}</title>
+
+	{block css}
+		<link rel="stylesheet" href="{$basePath}/css/style.css">
+	{/block}
+
+	{block head}{/block}
+    </head>
+
+    <body>
+	<header>
+		<h1>Elektronická evidence osob v Nette</h1>
+	</header>
+
+	{* Výpis flash zpráv. *}
+	<p n:foreach="$flashes as $flash" class="message">{$flash->message}</p>
+
+	<nav>
+            <ul>				
+		<li><a n:href=:Core:Item:list>Seznam položek</a></li>
+		<li><a n:href=:Core:Contact:>Kontakt</a></li>
+                <li><a n:href=:Core:Administration:>Administrace</a></li>
+            </ul>
+	</nav>
+	<br clear="both">
+
+	<item>
+		<header>
+                    <h1>{include title}</h1>
+		</header>
+		<section>
+                    {include content} {* Vložení obsahu do šablony. *}
+		</section>
+	</item>
+
+	<footer>
+		<p>
+                     <a n:href=:Core:Administration:>Administrace</a> 							
+		</p>
+                
+                <p>
+                     <a href="http://www.itnetwork.cz" target="_blank">itnetwork.cz</a>
+                </p>   
+	</footer>
+
+	{block scripts}
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="{$basePath}/js/main.js"></script>
+	{/block}
+    </body>
+</html>
