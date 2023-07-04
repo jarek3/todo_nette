@@ -30,10 +30,10 @@ class RouterFactory
 				Route::FILTER_STRICT => true,
 				Route::FILTER_TABLE => [
 					// řetězec v URL => akce presenteru
-					'administrace' => 'default',
-					'prihlaseni' => 'login',
-					'odhlasit' => 'logout',
-					'registrace' => 'register'
+					'administration' => 'default',
+					'logini' => 'login',
+					'logout' => 'logout',
+					'registration' => 'register'
 				]
 			]
 		]);
@@ -43,9 +43,9 @@ class RouterFactory
 				Route::FILTER_STRICT => true,
 				Route::FILTER_TABLE => [
 					// řetězec v URL => akce presenteru
-					'seznam-ukolu' => 'list',
+					'list-tasks' => 'list',
 					'editor' => 'editor',
-					'odstranit' => 'remove'
+					'remove' => 'remove'
 				]
 			]
 		]);

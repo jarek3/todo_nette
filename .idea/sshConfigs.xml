@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="ftp4.webzdarma.cz" id="d29d8cba-2410-4fb7-adc0-a5ee5a73dd9f" port="22" nameFormat="DESCRIPTIVE" username="brnak.wz.cz" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>

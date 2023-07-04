@@ -1,8 +1,8 @@
-{block title}Administrace webu{/block}
-{block description}Administrace webu.{/block}
+{block title}Site administration{/block}
+{block description}Site administration.{/block}
 {block content}
-<p>Vítejte v administraci! Jste přihlášeni jako <b>{$username}</b>.</p>
-<p n:if="!$user->isInRole('admin')">Nemáte administrátorská oprávnění, požádejte administrátora webu, aby vám je přidělil.</p>
-<h2><a n:href=Task:editor>Editor položek</a></h2>
-<h2><a n:href=Task:list>Seznam úkolů</a></h2>
-<h2><a n:href=logout>Odhlásit</a></h2>
+<p>Welcome to the administration! You are logged in as <b>{$username}</b>.</p>
+<p n:if="!$user->isInRole('admin')">You do not have administrator privileges, ask the site administrator to assign them to you.</p>
+<h2><a n:href=Task:editor>Item editor</a></h2>
+<h2><a n:href=Task:list>List of tasks</a></h2>
+<h2><a n:href=logout>Log out</a></h2>

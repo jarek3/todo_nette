@@ -1,0 +1,2621 @@
+<!DOCTYPE html><!-- "' --></textarea></script></style></pre></xmp></a></iframe></noembed></noframes></noscript></option></select></template></title></table>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex">
+	<meta name="generator" content="Tracy by Nette Framework">
+
+	<title>Nette\MemberAccessException: Cannot write to an undeclared property App\CoreModule\Presenters\ItemPresenter::$itemManager.</title>
+	
+	<style type="text/css" class="tracy-debug">
+	/** * This file is part of the Tracy (https://tracy.nette.org) */ #tracy-bs { font: 9pt/1.5 Verdana, sans-serif; background: white; color: #333; position: absolute; z-index: 20000; left: 0; top: 0; width: 100%; text-align: left; } #tracy-bs * { font: inherit; color: inherit; background: transparent; border: none; margin: 0; padding: 0; text-align: inherit; text-indent: 0; } #tracy-bs *:before, #tracy-bs *:after { all: unset; } #tracy-bs b { font-weight: bold; } #tracy-bs i { font-style: italic; } #tracy-bs a { text-decoration: none; color: #328ADC; padding: 2px 4px; margin: -2px -4px; } #tracy-bs a:hover, #tracy-bs a:focus { color: #085AA3; } #tracy-bs-toggle { position: absolute; right: .5em; top: .5em; text-decoration: none; background: #CD1818; color: white !important; padding: 3px; } #tracy-bs-error { background: #CD1818; color: white; font-size: 13pt; } #tracy-bs-error a { color: white !important; opacity: 0; font-size: .7em; border-bottom: none !important; } #tracy-bs-error:hover a { opacity: .6; } #tracy-bs-error a:hover { opacity: 1; } #tracy-bs-error i { color: #ffefa1; font-style: normal; } #tracy-bs-ie-warning { background: black; margin: 1em; padding: .5em; text-align: center; } #tracy-bs h1 { font-size: 15pt; font-weight: normal; text-shadow: 1px 1px 2px rgba(0, 0, 0, .3); margin: .7em 0; } #tracy-bs h1 span { white-space: pre-wrap; } #tracy-bs h2 { font-size: 14pt; margin: .6em 0; } #tracy-bs h3 { font-size: 10pt; font-weight: bold; margin: 1em 0; padding: 0; } #tracy-bs p, #tracy-bs pre { margin: .8em 0 } #tracy-bs pre, #tracy-bs code, #tracy-bs table { font: 9pt/1.5 Consolas, monospace !important; } #tracy-bs pre, #tracy-bs table { background: #FDF5CE; padding: .4em .7em; border: 1px dotted silver; overflow: auto; } #tracy-bs table pre { padding: 0; margin: 0; border: none; } #tracy-bs table { border-collapse: collapse; width: 100%; } #tracy-bs td, #tracy-bs th { vertical-align: top; text-align: left; padding: 2px 6px; border: 1px solid #e6dfbf; } #tracy-bs th { font-weight: bold; } #tracy-bs tr > :first-child { width: 20%; } #tracy-bs tr:nth-child(2n), #tracy-bs tr:nth-child(2n) pre { background-color: #F7F0CB; } #tracy-bs ol { margin: 1em 0; padding-left: 2.5em; } #tracy-bs ul { font-size: 7pt; padding: 2em 4em; margin: 1em 0 0; color: #777; background: #F6F5F3; border-top: 1px solid #DDD; } #tracy-bs-logo a { position: absolute; bottom: 0; right: 0; width: 100px; height: 50px; background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAAAUBAMAAAD/1DctAAAAMFBMVEWupZzj39rEvbTy8O3X0sz9/PvGwLu8tavQysHq6OS0rKP5+Pbd2dT29fPMxbzPx8DKErMJAAAACXBIWXMAAAsTAAALEwEAmpwYAAACGUlEQVQoFX3TQWgTQRQA0MWLIJJDYehBTykhG5ERTx56K1u8eEhCYtomE7x5L4iLh0ViF7egewuFFqSIYE6hIHsIYQ6CQSg9CDKn4QsNCRlB59C74J/ZNHW1+An5+bOPyf6/s46oz2P+A0yIeZZ2ieEHi6TOnLKTxvWq+b52mxlVO3xnM1s7xLX1504XQH65OnW2dBqn7cCkYsFsfYsWpyY/2salmFTpEyzeR8zosYqMdiPDXdyU52K1wgEa/SjGpdEwUAxqvRfckQCDOyFearsEHe2grvkh/cFAHKvdtI3lcVceKQIOFpv+FOZaNPQBwJZLPp+hfrvT5JZXaUFsR8zqQc9qSgAharkfS5M/5F6nGJJAtXq/eLr3ucZpHccSxOOIPaQhtHohpCH2Xu6rLmQ0djnr4/+J3C6v+AW8/XWYxwYNdlhWj/P5fPSTQwVr0T9lGxdaBCqErNZaqYnEwbkjEB3NasGF3lPdrHa1nnxNOMgj0+neePUPjd2v/qVvUv29ifvc19huQ48qwXShy/9o8o3OSk0cs37mOFd0Ydgvsf/oZEnPVtggfd66lORn9mDyyzXU13SRtH2L6aR5T/snGAcZPfAXz5J1YlJWBEuxdMYqQecpBrlM49xAbmqyHA+xlA1FxBtqT2xmJoNXZlIt74ZBLeJ9ZGDqByNI7p543idzJ23vXEv7IgnsxiS+eNtwNbFdLq7+Bi4wQ0I4SVb9AAAAAElFTkSuQmCC') no-repeat; opacity: .6; padding: 0; margin: 0; } #tracy-bs-logo a:hover, #tracy-bs-logo a:focus { opacity: 1; transition: opacity 0.1s; } #tracy-bs div.panel { padding: 1px 25px; } #tracy-bs div.inner { background: #F4F3F1; padding: .1em 1em 1em; border-radius: 8px; } #tracy-bs .outer { overflow: auto; } /* source code */ #tracy-bs pre.code > div { min-width: 100%; float: left; white-space: pre; } #tracy-bs .highlight { background: #CD1818; color: white; font-weight: bold; font-style: normal; display: block; padding: 0 .4em; margin: 0 -.4em; } #tracy-bs .line { color: #9F9C7F; font-weight: normal; font-style: normal; } #tracy-bs pre:hover span[title] { border-bottom: 1px solid rgba(0, 0, 0, 0.2); } #tracy-bs a[href^=editor\:] { color: inherit; border-bottom: 1px dotted rgba(0, 0, 0, .3); } #tracy-bs span[data-tracy-href] { border-bottom: 1px dotted rgba(0, 0, 0, .3); } /* toggle */ html.tracy-js #tracy-bs .tracy-collapsed { display: none; } html.tracy-js #tracy-bs .tracy-toggle.tracy-collapsed { display: inline; } #tracy-bs .tracy-toggle { cursor: pointer; } #tracy-bs .tracy-toggle:after { content: "\A0\25BC"; opacity: .4; } #tracy-bs .tracy-toggle.tracy-collapsed:after { content: "\A0\25BA"; opacity: .4; } /* dump */ #tracy-bs .tracy-dump-array, #tracy-bs .tracy-dump-object { color: #C22; } #tracy-bs .tracy-dump-string { color: #35D; } #tracy-bs .tracy-dump-number { color: #090; } #tracy-bs .tracy-dump-null, #tracy-bs .tracy-dump-bool { color: #850; } #tracy-bs .tracy-dump-visibility, #tracy-bs .tracy-dump-hash { font-size: 85%; color: #998; } #tracy-bs .tracy-dump-indent { display: none; } #tracy-bs pre.tracy-dump div { padding-left: 3ex; } #tracy-bs pre.tracy-dump div div { border-left: 1px solid rgba(0, 0, 0, .1); margin-left: .5ex; } #tracy-bs .caused { float: right; padding: .3em .6em; background: #df8075; border-radius: 0 0 0 8px; white-space: nowrap; } #tracy-bs .caused a { color: white; } 	</style>
+	<script>document.documentElement.className+=' tracy-js'</script>
+</head>
+
+
+<body>
+<div id="tracy-bs">
+	<a id="tracy-bs-toggle" href="#" class="tracy-toggle"></a>
+	<div>
+		<div id="tracy-bs-error" class="panel">
+			<p>Nette\MemberAccessException</p>
+
+			<h1><span>Cannot write to an undeclared property App\CoreModule\Presenters\ItemPresenter::$itemManager.</span>
+						<a href="https://www.google.com/search?sourceid=tracy&amp;q=Nette%5CMemberAccessException+Cannot+write+to+an+undeclared+property+App%5CCoreModule%5CPresenters%5CItemPresenter%3A%3A%24itemManager." target="_blank" rel="noreferrer noopener">search&#x25ba;</a>
+			</h1>
+		</div>
+
+		
+
+				
+			
+
+			
+
+						
+			<div class="panel">
+			<h2><a data-tracy-ref="^+" class="tracy-toggle tracy-collapsed">Source file</a></h2>
+
+			<div class="tracy-collapsed inner">
+				<p><b>File:</b> <a href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Cutils%5Csrc%5CUtils%5CObjectHelpers.php&amp;line=45&amp;search=&amp;replace=" title="...\vendor\nette\utils\src\Utils\ObjectHelpers.php:45">...\vendor\nette\utils\src\Utils\<b>ObjectHelpers.php</b>:45</a></p>
+				<pre data-tracy-href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Cutils%5Csrc%5CUtils%5CObjectHelpers.php&amp;line=45&amp;search=&amp;replace=" class='code'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>35:</span>        </span><span style="color: #998; font-style: italic">/**
+<span class='line'>36:</span>         * @throws MemberAccessException
+<span class='line'>37:</span>         */
+<span class='line'>38:</span>        </span><span style="color: #D24; font-weight: bold">public static function </span><span style="color: #000">strictSet</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$class</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$name</span><span style="color: #D24; font-weight: bold">)
+<span class='line'>39:</span>        {
+<span class='line'>40:</span>            </span><span style="color: #000">$rc </span><span style="color: #D24; font-weight: bold">= new \</span><span style="color: #000">ReflectionClass</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$class</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>41:</span>            </span><span style="color: #000">$hint </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">self</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">getSuggestion</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">array_merge</span><span style="color: #D24; font-weight: bold">(
+<span class='line'>42:</span>                </span><span style="color: #000">array_filter</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$rc</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getProperties</span><span style="color: #D24; font-weight: bold">(\</span><span style="color: #000">ReflectionProperty</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">IS_PUBLIC</span><span style="color: #D24; font-weight: bold">), function (</span><span style="color: #000">$p</span><span style="color: #D24; font-weight: bold">) { return !</span><span style="color: #000">$p</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">isStatic</span><span style="color: #D24; font-weight: bold">(); }),
+<span class='line'>43:</span>                </span><span style="color: #000">self</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">parseFullDoc</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$rc</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #080">'~^[ \t*]*@property(?:-write)?[ \t]+(?:\S+[ \t]+)??\$(\w+)~m'</span><span style="color: #D24; font-weight: bold">)
+<span class='line'>44:</span>            ), </span><span style="color: #000">$name</span><span style="color: #D24; font-weight: bold">);
+<span class='highlight'>45:            throw new MemberAccessException("Cannot write to an undeclared property $class::\$$name" . ($hint ? ", did you mean \$$hint?" : '.'));
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #000"></span><span style="color: #080"></span><span style="color: #000"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #000"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"><span class='line'>46:</span>        }
+<span class='line'>47:</span>    
+<span class='line'>48:</span>    
+<span class='line'>49:</span>        </span><span style="color: #998; font-style: italic">/**
+</span></span></code></div></pre>			</div></div>
+
+
+									<div class="panel">
+				<h2><a data-tracy-ref="^+" class="tracy-toggle">Call stack</a></h2>
+
+				<div class="inner">
+				<ol>
+										<li><p>
+
+											<a href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Cutils%5Csrc%5CUtils%5CSmartObject.php&amp;line=171&amp;search=&amp;replace=" title="...\vendor\nette\utils\src\Utils\SmartObject.php:171">...\vendor\nette\utils\src\Utils\<b>SmartObject.php</b>:171</a>					
+					<a data-tracy-ref="^p + .file" class="tracy-toggle tracy-collapsed">source</a>&nbsp; 
+					Nette\Utils\ObjectHelpers::strictSet(<a data-tracy-ref="^p + .args" class="tracy-toggle tracy-collapsed">arguments</a>)
+					</p>
+
+											<div class="tracy-collapsed file"><pre data-tracy-href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Cutils%5Csrc%5CUtils%5CSmartObject.php&amp;line=171&amp;search=&amp;replace=" class='code'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>161:</span>                throw new </span><span style="color: #000">MemberAccessException</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">"Cannot write to a class '</span><span style="color: #000">$class</span><span style="color: #080">' property without name."</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>162:</span>    
+<span class='line'>163:</span>            } elseif ((</span><span style="color: #000">$methods </span><span style="color: #D24; font-weight: bold">= &amp;</span><span style="color: #000">ObjectMixin</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">getMethods</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$class</span><span style="color: #D24; font-weight: bold">)) &amp;&amp; isset(</span><span style="color: #000">$methods</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #000">$m </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #080">'set' </span><span style="color: #D24; font-weight: bold">. </span><span style="color: #000">$uname</span><span style="color: #D24; font-weight: bold">])) { </span><span style="color: #998; font-style: italic">// old property setter
+<span class='line'>164:</span>                </span><span style="color: #000">trigger_error</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">"Use </span><span style="color: #000">$m</span><span style="color: #080">() or add annotation @property for </span><span style="color: #000">$class</span><span style="color: #080">::\$</span><span style="color: #000">$name</span><span style="color: #080">" </span><span style="color: #D24; font-weight: bold">. </span><span style="color: #000">ObjectMixin</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">getSource</span><span style="color: #D24; font-weight: bold">(), </span><span style="color: #000">E_USER_DEPRECATED</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>165:</span>                </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">$m</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$value</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>166:</span>    
+<span class='line'>167:</span>            } elseif (isset(</span><span style="color: #000">$methods</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #080">'get' </span><span style="color: #D24; font-weight: bold">. </span><span style="color: #000">$uname</span><span style="color: #D24; font-weight: bold">]) || isset(</span><span style="color: #000">$methods</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #080">'is' </span><span style="color: #D24; font-weight: bold">. </span><span style="color: #000">$uname</span><span style="color: #D24; font-weight: bold">])) { </span><span style="color: #998; font-style: italic">// property setter
+<span class='line'>168:</span>                </span><span style="color: #D24; font-weight: bold">throw new </span><span style="color: #000">MemberAccessException</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">"Cannot write to a read-only property </span><span style="color: #000">$class</span><span style="color: #080">::\$</span><span style="color: #000">$name</span><span style="color: #080">."</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>169:</span>    
+<span class='line'>170:</span>            } else {
+<span class='highlight'>171:                ObjectHelpers::strictSet($class, $name);
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>172:</span>            }
+<span class='line'>173:</span>        }
+<span class='line'>174:</span>    
+<span class='line'>175:</span>    
+</span></span></code></div></pre></div>
+					
+					
+											<div class="tracy-collapsed outer args">
+						<table>
+						<tr><th>$class</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"App\CoreModule\Presenters\ItemPresenter"</span> (42)
+</pre>
+</td></tr>
+<tr><th>$name</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"itemManager"</span> (14)
+</pre>
+</td></tr>
+						</table>
+						</div>
+										</li>
+										<li><p>
+
+											<a href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Capp%5CCoreModule%5Cpresenters%5CItemPresenter.php&amp;line=35&amp;search=&amp;replace=" title="...\app\CoreModule\presenters\ItemPresenter.php:35">...\app\CoreModule\presenters\<b>ItemPresenter.php</b>:35</a>					
+					<a data-tracy-ref="^p + .file" class="tracy-toggle">source</a>&nbsp; 
+					Nette\ComponentModel\Component-&gt;__set(<a data-tracy-ref="^p + .args" class="tracy-toggle tracy-collapsed">arguments</a>)
+					</p>
+
+											<div class="file"><pre data-tracy-href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Capp%5CCoreModule%5Cpresenters%5CItemPresenter.php&amp;line=35&amp;search=&amp;replace=" class='code'><div><code><span style="color: #06B"><span style="color: #998; font-style: italic"><span class='line'>25:</span>            </span><span style="color: #D24; font-weight: bold">public    </span><span style="color: #000">$item</span><span style="color: #D24; font-weight: bold">;  
+<span class='line'>26:</span>        </span><span style="color: #998; font-style: italic">/**
+<span class='line'>27:</span>         * Konstruktor s nastavením URL výchozího článku a injektovaným modelem pro správu položek.
+<span class='line'>28:</span>         * @param string         $defaultItemUrl URL výchozího článku
+<span class='line'>29:</span>         * @param ItemManager $itemManager    automaticky injektovaný model pro správu položek
+<span class='line'>30:</span>         */
+<span class='line'>31:</span>        </span><span style="color: #D24; font-weight: bold">public function </span><span style="color: #000">__construct</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$defaultItemUrl</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">ItemManager $itemManager</span><span style="color: #D24; font-weight: bold">)
+<span class='line'>32:</span>        {
+<span class='line'>33:</span>            </span><span style="color: #000">parent</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">__construct</span><span style="color: #D24; font-weight: bold">();
+<span class='line'>34:</span>            </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">defaultItemUrl </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">$defaultItemUrl</span><span style="color: #D24; font-weight: bold">;
+<span class='highlight'>35:            $this-&gt;itemManager = $itemManager;                
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>36:</span>        }
+<span class='line'>37:</span>    
+<span class='line'>38:</span>        </span><span style="color: #998; font-style: italic">/**
+<span class='line'>39:</span>         * Načte a předá článek do šablony podle jeho URL.
+</span></span></code></div></pre></div>
+					
+					
+											<div class="tracy-collapsed outer args">
+						<table>
+						<tr><th>$name</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"itemManager"</span> (14)
+</pre>
+</td></tr>
+<tr><th>$value</th><td><pre class="tracy-dump" data-tracy-dump='{"object":"01"}'></pre>
+</td></tr>
+						</table>
+						</div>
+										</li>
+										<li><p>
+
+											<a href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Ctemp%5Ccache%5CNette.Configurator%5CContainer_f550f6e760.php&amp;line=375&amp;search=&amp;replace=" title="...\cache\Nette.Configurator\Container_f550f6e760.php:375">...\cache\Nette.Configurator\<b>Container_f550f6e760.php</b>:375</a>					
+					<a data-tracy-ref="^p + .file" class="tracy-toggle tracy-collapsed">source</a>&nbsp; 
+					App\CoreModule\Presenters\ItemPresenter-&gt;__construct(<a data-tracy-ref="^p + .args" class="tracy-toggle tracy-collapsed">arguments</a>)
+					</p>
+
+											<div class="tracy-collapsed file"><pre data-tracy-href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Ctemp%5Ccache%5CNette.Configurator%5CContainer_f550f6e760.php&amp;line=375&amp;search=&amp;replace=" class='code'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>365:</span>            </span><span style="color: #000">$service</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">invalidLinkMode </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">5</span><span style="color: #D24; font-weight: bold">;
+<span class='line'>366:</span>            return </span><span style="color: #000">$service</span><span style="color: #D24; font-weight: bold">;
+<span class='line'>367:</span>        }
+<span class='line'>368:</span>    
+<span class='line'>369:</span>    
+<span class='line'>370:</span>        </span><span style="color: #998; font-style: italic">/**
+<span class='line'>371:</span>         * @return App\CoreModule\Presenters\ItemPresenter
+<span class='line'>372:</span>         */
+<span class='line'>373:</span>        </span><span style="color: #D24; font-weight: bold">public function </span><span style="color: #000">createService__32_App_CoreModule_Presenters_ItemPresenter</span><span style="color: #D24; font-weight: bold">()
+<span class='line'>374:</span>        {
+<span class='highlight'>375:            $service = new App\CoreModule\Presenters\ItemPresenter('uvod', $this-&gt;getService('25_App_CoreModule_Model_ItemManager'));
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"><span class='line'>376:</span>            </span><span style="color: #000">$service</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">injectPrimary</span><span style="color: #D24; font-weight: bold">(
+<span class='line'>377:</span>                </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">,
+<span class='line'>378:</span>                </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getService</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'application.presenterFactory'</span><span style="color: #D24; font-weight: bold">),
+<span class='line'>379:</span>                </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getService</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'routing.router'</span><span style="color: #D24; font-weight: bold">),
+</span></span></code></div></pre></div>
+					
+					
+											<div class="tracy-collapsed outer args">
+						<table>
+						<tr><th>$defaultItemUrl</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"uvod"</span> (4)
+</pre>
+</td></tr>
+<tr><th>$itemManager</th><td><pre class="tracy-dump" data-tracy-dump='{"object":"01"}'></pre>
+</td></tr>
+						</table>
+						</div>
+										</li>
+										<li><p>
+
+											<a href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Cdi%5Csrc%5CDI%5CContainer.php&amp;line=181&amp;search=&amp;replace=" title="...\Records_nette\vendor\nette\di\src\DI\Container.php:181">...\Records_nette\vendor\nette\di\src\DI\<b>Container.php</b>:181</a>					
+					<a data-tracy-ref="^p + .file" class="tracy-toggle tracy-collapsed">source</a>&nbsp; 
+					Container_f550f6e760-&gt;createService__32_App_CoreModule_Presenters_ItemPresenter()
+					</p>
+
+											<div class="tracy-collapsed file"><pre data-tracy-href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Cdi%5Csrc%5CDI%5CContainer.php&amp;line=181&amp;search=&amp;replace=" class='code'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>171:</span>            </span><span style="color: #000">$method </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">self</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">getMethodName</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$name</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>172:</span>            if (isset(</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">creating</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #000">$name</span><span style="color: #D24; font-weight: bold">])) {
+<span class='line'>173:</span>                throw new </span><span style="color: #000">Nette</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">InvalidStateException</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">sprintf</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'Circular reference detected for services: %s.'</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">implode</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">', '</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">array_keys</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">creating</span><span style="color: #D24; font-weight: bold">))));
+<span class='line'>174:</span>    
+<span class='line'>175:</span>            } elseif (!</span><span style="color: #000">method_exists</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$method</span><span style="color: #D24; font-weight: bold">) || (new \</span><span style="color: #000">ReflectionMethod</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$method</span><span style="color: #D24; font-weight: bold">))-&gt;</span><span style="color: #000">getName</span><span style="color: #D24; font-weight: bold">() !== </span><span style="color: #000">$method</span><span style="color: #D24; font-weight: bold">) {
+<span class='line'>176:</span>                throw new </span><span style="color: #000">MissingServiceException</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">"Service '</span><span style="color: #000">$name</span><span style="color: #080">' not found."</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>177:</span>            }
+<span class='line'>178:</span>    
+<span class='line'>179:</span>            try {
+<span class='line'>180:</span>                </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">creating</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #000">$name</span><span style="color: #D24; font-weight: bold">] = </span><span style="color: #000">true</span><span style="color: #D24; font-weight: bold">;
+<span class='highlight'>181:                $service = $this-&gt;$method(...$args);
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>182:</span>    
+<span class='line'>183:</span>            } finally {
+<span class='line'>184:</span>                unset(</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">creating</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #000">$name</span><span style="color: #D24; font-weight: bold">]);
+<span class='line'>185:</span>            }
+</span></span></code></div></pre></div>
+					
+					
+										</li>
+										<li><p>
+
+											<a href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Capplication%5Csrc%5CBridges%5CApplicationDI%5CPresenterFactoryCallback.php&amp;line=59&amp;search=&amp;replace=" title="...\Bridges\ApplicationDI\PresenterFactoryCallback.php:59">...\Bridges\ApplicationDI\<b>PresenterFactoryCallback.php</b>:59</a>					
+					<a data-tracy-ref="^p + .file" class="tracy-toggle tracy-collapsed">source</a>&nbsp; 
+					Nette\DI\Container-&gt;createService(<a data-tracy-ref="^p + .args" class="tracy-toggle tracy-collapsed">arguments</a>)
+					</p>
+
+											<div class="tracy-collapsed file"><pre data-tracy-href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Capplication%5Csrc%5CBridges%5CApplicationDI%5CPresenterFactoryCallback.php&amp;line=59&amp;search=&amp;replace=" class='code'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>49:</span>                }
+<span class='line'>50:</span>    
+<span class='line'>51:</span>                </span><span style="color: #000">$presenter </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">container</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">createInstance</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$class</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>52:</span>                </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">container</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">callInjects</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$presenter</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>53:</span>                if (</span><span style="color: #000">$presenter </span><span style="color: #D24; font-weight: bold">instanceof </span><span style="color: #000">Nette</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Application</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">UI</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Presenter </span><span style="color: #D24; font-weight: bold">&amp;&amp; </span><span style="color: #000">$presenter</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">invalidLinkMode </span><span style="color: #D24; font-weight: bold">=== </span><span style="color: #000">null</span><span style="color: #D24; font-weight: bold">) {
+<span class='line'>54:</span>                    </span><span style="color: #000">$presenter</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">invalidLinkMode </span><span style="color: #D24; font-weight: bold">= </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">invalidLinkMode</span><span style="color: #D24; font-weight: bold">;
+<span class='line'>55:</span>                }
+<span class='line'>56:</span>                return </span><span style="color: #000">$presenter</span><span style="color: #D24; font-weight: bold">;
+<span class='line'>57:</span>            }
+<span class='line'>58:</span>    
+<span class='highlight'>59:            return $this-&gt;container-&gt;createService($services[0]);
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>60:</span>        }
+<span class='line'>61:</span>    }
+<span class='line'>62:</span>    </span>
+</span></code></div></pre></div>
+					
+					
+											<div class="tracy-collapsed outer args">
+						<table>
+						<tr><th>$name</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"32_App_CoreModule_Presenters_ItemPresenter"</span> (45)
+</pre>
+</td></tr>
+						</table>
+						</div>
+										</li>
+										<li><p>
+
+											<i>inner-code</i>					
+					
+					Nette\Bridges\ApplicationDI\PresenterFactoryCallback-&gt;__invoke(<a data-tracy-ref="^p + .args" class="tracy-toggle tracy-collapsed">arguments</a>)
+					</p>
+
+					
+					
+											<div class="tracy-collapsed outer args">
+						<table>
+						<tr><th>$class</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"App\CoreModule\Presenters\ItemPresenter"</span> (42)
+</pre>
+</td></tr>
+						</table>
+						</div>
+										</li>
+										<li><p>
+
+											<a href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Capplication%5Csrc%5CApplication%5CPresenterFactory.php&amp;line=49&amp;search=&amp;replace=" title="...\application\src\Application\PresenterFactory.php:49">...\application\src\Application\<b>PresenterFactory.php</b>:49</a>					
+					<a data-tracy-ref="^p + .file" class="tracy-toggle tracy-collapsed">source</a>&nbsp; 
+					call_user_func(<a data-tracy-ref="^p + .args" class="tracy-toggle tracy-collapsed">arguments</a>)
+					</p>
+
+											<div class="tracy-collapsed file"><pre data-tracy-href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Capplication%5Csrc%5CApplication%5CPresenterFactory.php&amp;line=49&amp;search=&amp;replace=" class='code'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>39:</span>        }
+<span class='line'>40:</span>    
+<span class='line'>41:</span>    
+<span class='line'>42:</span>        </span><span style="color: #998; font-style: italic">/**
+<span class='line'>43:</span>         * Creates new presenter instance.
+<span class='line'>44:</span>         * @param  string  presenter name
+<span class='line'>45:</span>         * @return IPresenter
+<span class='line'>46:</span>         */
+<span class='line'>47:</span>        </span><span style="color: #D24; font-weight: bold">public function </span><span style="color: #000">createPresenter</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$name</span><span style="color: #D24; font-weight: bold">)
+<span class='line'>48:</span>        {
+<span class='highlight'>49:            return call_user_func($this-&gt;factory, $this-&gt;getPresenterClass($name));
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>50:</span>        }
+<span class='line'>51:</span>    
+<span class='line'>52:</span>    
+<span class='line'>53:</span>        </span><span style="color: #998; font-style: italic">/**
+</span></span></code></div></pre></div>
+					
+					
+											<div class="tracy-collapsed outer args">
+						<table>
+						<tr><th>$function_name</th><td><pre class="tracy-dump" data-tracy-dump='{"object":"09"}'></pre>
+</td></tr>
+<tr><th>$parameters</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"App\CoreModule\Presenters\ItemPresenter"</span> (42)
+</pre>
+</td></tr>
+						</table>
+						</div>
+										</li>
+										<li><p>
+
+											<a href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Capplication%5Csrc%5CApplication%5CApplication.php&amp;line=140&amp;search=&amp;replace=" title="...\nette\application\src\Application\Application.php:140">...\nette\application\src\Application\<b>Application.php</b>:140</a>					
+					<a data-tracy-ref="^p + .file" class="tracy-toggle tracy-collapsed">source</a>&nbsp; 
+					Nette\Application\PresenterFactory-&gt;createPresenter(<a data-tracy-ref="^p + .args" class="tracy-toggle tracy-collapsed">arguments</a>)
+					</p>
+
+											<div class="tracy-collapsed file"><pre data-tracy-href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Capplication%5Csrc%5CApplication%5CApplication.php&amp;line=140&amp;search=&amp;replace=" class='code'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>130:</span>            }
+<span class='line'>131:</span>    
+<span class='line'>132:</span>            </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">requests</span><span style="color: #D24; font-weight: bold">[] = </span><span style="color: #000">$request</span><span style="color: #D24; font-weight: bold">;
+<span class='line'>133:</span>            </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">onRequest</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$request</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>134:</span>    
+<span class='line'>135:</span>            if (!</span><span style="color: #000">$request</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">isMethod</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$request</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">FORWARD</span><span style="color: #D24; font-weight: bold">) &amp;&amp; !</span><span style="color: #000">strcasecmp</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$request</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getPresenterName</span><span style="color: #D24; font-weight: bold">(), </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">errorPresenter</span><span style="color: #D24; font-weight: bold">)) {
+<span class='line'>136:</span>                throw new </span><span style="color: #000">BadRequestException</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'Invalid request. Presenter is not achievable.'</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>137:</span>            }
+<span class='line'>138:</span>    
+<span class='line'>139:</span>            try {
+<span class='highlight'>140:                $this-&gt;presenter = $this-&gt;presenterFactory-&gt;createPresenter($request-&gt;getPresenterName());
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>141:</span>            } catch (</span><span style="color: #000">InvalidPresenterException $e</span><span style="color: #D24; font-weight: bold">) {
+<span class='line'>142:</span>                throw </span><span style="color: #000">count</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">requests</span><span style="color: #D24; font-weight: bold">) &gt; </span><span style="color: #000">1 </span><span style="color: #D24; font-weight: bold">? </span><span style="color: #000">$e </span><span style="color: #D24; font-weight: bold">: new </span><span style="color: #000">BadRequestException</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$e</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getMessage</span><span style="color: #D24; font-weight: bold">(), </span><span style="color: #000">0</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$e</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>143:</span>            }
+<span class='line'>144:</span>            </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">onPresenter</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">, </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">presenter</span><span style="color: #D24; font-weight: bold">);
+</span></span></code></div></pre></div>
+					
+					
+											<div class="tracy-collapsed outer args">
+						<table>
+						<tr><th>$name</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"Core:Item"</span> (12)
+</pre>
+</td></tr>
+						</table>
+						</div>
+										</li>
+										<li><p>
+
+											<a href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Capplication%5Csrc%5CApplication%5CApplication.php&amp;line=83&amp;search=&amp;replace=" title="...\nette\application\src\Application\Application.php:83">...\nette\application\src\Application\<b>Application.php</b>:83</a>					
+					<a data-tracy-ref="^p + .file" class="tracy-toggle tracy-collapsed">source</a>&nbsp; 
+					Nette\Application\Application-&gt;processRequest(<a data-tracy-ref="^p + .args" class="tracy-toggle tracy-collapsed">arguments</a>)
+					</p>
+
+											<div class="tracy-collapsed file"><pre data-tracy-href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Capplication%5Csrc%5CApplication%5CApplication.php&amp;line=83&amp;search=&amp;replace=" class='code'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>73:</span>    
+<span class='line'>74:</span>    
+<span class='line'>75:</span>        </span><span style="color: #998; font-style: italic">/**
+<span class='line'>76:</span>         * Dispatch a HTTP request to a front controller.
+<span class='line'>77:</span>         * @return void
+<span class='line'>78:</span>         */
+<span class='line'>79:</span>        </span><span style="color: #D24; font-weight: bold">public function </span><span style="color: #000">run</span><span style="color: #D24; font-weight: bold">()
+<span class='line'>80:</span>        {
+<span class='line'>81:</span>            try {
+<span class='line'>82:</span>                </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">onStartup</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">);
+<span class='highlight'>83:                $this-&gt;processRequest($this-&gt;createInitialRequest());
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>84:</span>                </span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">onShutdown</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>85:</span>    
+<span class='line'>86:</span>            } catch (\</span><span style="color: #000">Exception $e</span><span style="color: #D24; font-weight: bold">) {
+<span class='line'>87:</span>            } catch (\</span><span style="color: #000">Throwable $e</span><span style="color: #D24; font-weight: bold">) {
+</span></span></code></div></pre></div>
+					
+					
+											<div class="tracy-collapsed outer args">
+						<table>
+						<tr><th>$request</th><td><pre class="tracy-dump" data-tracy-dump='{"object":"022"}'></pre>
+</td></tr>
+						</table>
+						</div>
+										</li>
+										<li><p>
+
+											<a href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cwww%5Cindex.php&amp;line=6&amp;search=&amp;replace=" title="C:\xampp\htdocs\Records_nette\www\index.php:6">C:\xampp\htdocs\Records_nette\www\<b>index.php</b>:6</a>					
+					<a data-tracy-ref="^p + .file" class="tracy-toggle tracy-collapsed">source</a>&nbsp; 
+					Nette\Application\Application-&gt;run()
+					</p>
+
+											<div class="tracy-collapsed file"><pre data-tracy-href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cwww%5Cindex.php&amp;line=6&amp;search=&amp;replace=" class='code'><div><code><span style="color: #06B"><span class='line'>1:</span>    <span style="color: #000">&lt;?php
+<span class='line'>2:</span>    
+<span class='line'>3:</span>    $container </span><span style="color: #D24; font-weight: bold">= require </span><span style="color: #000">__DIR__ </span><span style="color: #D24; font-weight: bold">. </span><span style="color: #080">'/../app/bootstrap.php'</span><span style="color: #D24; font-weight: bold">;
+<span class='line'>4:</span>    
+<span class='line'>5:</span>    </span><span style="color: #000">$container</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">getByType</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">Nette</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Application</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Application</span><span style="color: #D24; font-weight: bold">::class)
+<span class='highlight'>6:        -&gt;run();
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>7:</span>    </span>
+</span></code></div></pre></div>
+					
+					
+										</li>
+									</ol>
+			</div></div>
+			
+
+			
+				
+
+				<div class="panel">
+		<h2><a data-tracy-ref="^+" class="tracy-toggle tracy-collapsed">Exception</a></h2>
+		<div class="tracy-collapsed inner">
+		<pre class="tracy-dump" data-tracy-dump='{"object":"023"}'></pre>
+		</div></div>
+		
+
+				<div class="panel">
+		<h2><a data-tracy-ref="^+" class="tracy-toggle tracy-collapsed">Last muted error</a></h2>
+		<div class="tracy-collapsed inner">
+
+		<h3>User Deprecated: Class Nette\Utils\ObjectMixin is deprecated</h3>
+					<p><a href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Cutils%5Csrc%5CUtils%5CObjectMixin.php&amp;line=283&amp;search=&amp;replace=" title="...\vendor\nette\utils\src\Utils\ObjectMixin.php:283">...\vendor\nette\utils\src\Utils\<b>ObjectMixin.php</b>:283</a></p>
+			<div><pre data-tracy-href="editor://open/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Cutils%5Csrc%5CUtils%5CObjectMixin.php&amp;line=283&amp;search=&amp;replace=" class='code'><div><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>273:</span>    
+<span class='line'>274:</span>        </span><span style="color: #998; font-style: italic">/********************* magic @methods ****************d*g**/
+<span class='line'>275:</span>    
+<span class='line'>276:</span>    
+<span class='line'>277:</span>        /**
+<span class='line'>278:</span>         * Returns array of magic methods defined by annotation @method.
+<span class='line'>279:</span>         * @return array
+<span class='line'>280:</span>         */
+<span class='line'>281:</span>        </span><span style="color: #D24; font-weight: bold">public static function </span><span style="color: #000">getMagicMethods</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$class</span><span style="color: #D24; font-weight: bold">)
+<span class='line'>282:</span>        {
+<span class='highlight'>283:            trigger_error('Class Nette\Utils\ObjectMixin is deprecated', E_USER_DEPRECATED);
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>284:</span>            </span><span style="color: #000">$rc </span><span style="color: #D24; font-weight: bold">= new \</span><span style="color: #000">ReflectionClass</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$class</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>285:</span>            </span><span style="color: #000">preg_match_all</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'~^
+<span class='line'>286:</span>                [ \t*]*  @method  [ \t]+
+<span class='line'>287:</span>                (?: [^\s(]+  [ \t]+ )?
+</span></span></code></div></pre></div>
+		
+		</div></div>
+		
+
+										<div class="panel">
+			<h2><a data-tracy-ref="^+" class="tracy-toggle tracy-collapsed">Nette Application</a></h2>
+
+			<div class="inner tracy-collapsed">
+			<h3>Requests</h3><pre class="tracy-dump" data-tracy-dump='[[0,{"object":"022"}],[1,{"object":"024"}]]'></pre>
+<h3>Presenter</h3><pre class="tracy-dump" data-tracy-dump='{"object":"025"}'></pre>
+		</div></div>
+		
+
+		<div class="panel">
+		<h2><a data-tracy-ref="^+" class="tracy-toggle tracy-collapsed">Environment</a></h2>
+
+		<div class="tracy-collapsed inner">
+			<h3><a data-tracy-ref="^+" class="tracy-toggle">$_SERVER</a></h3>
+			<div class="outer">
+			<table>
+			<tr><th>REDIRECT_REDIRECT_MIBDIRS</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:/xampp/php/extras/mibs"</span> (24)
+</pre>
+</td></tr>
+<tr><th>REDIRECT_REDIRECT_MYSQL_HOME</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"\xampp\mysql\bin"</span> (16)
+</pre>
+</td></tr>
+<tr><th>REDIRECT_REDIRECT_OPENSSL_CONF</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:/xampp/apache/bin/openssl.cnf"</span> (31)
+</pre>
+</td></tr>
+<tr><th>REDIRECT_REDIRECT_PHP_PEAR_SYSCONF_DIR</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"\xampp\php"</span> (10)
+</pre>
+</td></tr>
+<tr><th>REDIRECT_REDIRECT_PHPRC</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"\xampp\php"</span> (10)
+</pre>
+</td></tr>
+<tr><th>REDIRECT_REDIRECT_TMP</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"\xampp\tmp"</span> (10)
+</pre>
+</td></tr>
+<tr><th>REDIRECT_REDIRECT_STATUS</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"200"</span> (3)
+</pre>
+</td></tr>
+<tr><th>REDIRECT_MIBDIRS</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:/xampp/php/extras/mibs"</span> (24)
+</pre>
+</td></tr>
+<tr><th>REDIRECT_MYSQL_HOME</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"\xampp\mysql\bin"</span> (16)
+</pre>
+</td></tr>
+<tr><th>REDIRECT_OPENSSL_CONF</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:/xampp/apache/bin/openssl.cnf"</span> (31)
+</pre>
+</td></tr>
+<tr><th>REDIRECT_PHP_PEAR_SYSCONF_DIR</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"\xampp\php"</span> (10)
+</pre>
+</td></tr>
+<tr><th>REDIRECT_PHPRC</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"\xampp\php"</span> (10)
+</pre>
+</td></tr>
+<tr><th>REDIRECT_TMP</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"\xampp\tmp"</span> (10)
+</pre>
+</td></tr>
+<tr><th>REDIRECT_STATUS</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"200"</span> (3)
+</pre>
+</td></tr>
+<tr><th>MIBDIRS</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:/xampp/php/extras/mibs"</span> (24)
+</pre>
+</td></tr>
+<tr><th>MYSQL_HOME</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"\xampp\mysql\bin"</span> (16)
+</pre>
+</td></tr>
+<tr><th>OPENSSL_CONF</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:/xampp/apache/bin/openssl.cnf"</span> (31)
+</pre>
+</td></tr>
+<tr><th>PHP_PEAR_SYSCONF_DIR</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"\xampp\php"</span> (10)
+</pre>
+</td></tr>
+<tr><th>PHPRC</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"\xampp\php"</span> (10)
+</pre>
+</td></tr>
+<tr><th>TMP</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"\xampp\tmp"</span> (10)
+</pre>
+</td></tr>
+<tr><th>HTTP_HOST</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"localhost"</span> (9)
+</pre>
+</td></tr>
+<tr><th>HTTP_CONNECTION</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"keep-alive"</span> (10)
+</pre>
+</td></tr>
+<tr><th>HTTP_CACHE_CONTROL</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"max-age=0"</span> (9)
+</pre>
+</td></tr>
+<tr><th>HTTP_ACCEPT</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"</span> (74)
+</pre>
+</td></tr>
+<tr><th>HTTP_UPGRADE_INSECURE_REQUESTS</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"1"</span>
+</pre>
+</td></tr>
+<tr><th>HTTP_USER_AGENT</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36"</span> (102)
+</pre>
+</td></tr>
+<tr><th>HTTP_ACCEPT_ENCODING</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"gzip, deflate, sdch"</span> (19)
+</pre>
+</td></tr>
+<tr><th>HTTP_ACCEPT_LANGUAGE</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"cs-CZ,cs;q=0.8"</span> (14)
+</pre>
+</td></tr>
+<tr><th>HTTP_COOKIE</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"SL_GWPT_Show_Hide_tmp=undefined; PHPSESSID=f97namdoet55qa9s071t9mcb25; SL_G_WPT_TO=cs; SL_wptGlobTipTmp=undefined"</span> (113)
+</pre>
+</td></tr>
+<tr><th>PATH</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Common Files\Micr ... "</span> (175)
+</pre>
+</td></tr>
+<tr><th>SystemRoot</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:\WINDOWS"</span> (10)
+</pre>
+</td></tr>
+<tr><th>COMSPEC</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:\WINDOWS\system32\cmd.exe"</span> (27)
+</pre>
+</td></tr>
+<tr><th>PATHEXT</th><td><pre class="tracy-dump"><span class="tracy-dump-string">".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH"</span> (48)
+</pre>
+</td></tr>
+<tr><th>WINDIR</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:\WINDOWS"</span> (10)
+</pre>
+</td></tr>
+<tr><th>SERVER_SIGNATURE</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"&lt;address&gt;Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.6.4 Server at localhost Port 80&lt;/address&gt;
+"</span> (93)
+</pre>
+</td></tr>
+<tr><th>SERVER_SOFTWARE</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.6.4"</span> (45)
+</pre>
+</td></tr>
+<tr><th>SERVER_NAME</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"localhost"</span> (9)
+</pre>
+</td></tr>
+<tr><th>SERVER_ADDR</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"127.0.0.1"</span> (9)
+</pre>
+</td></tr>
+<tr><th>SERVER_PORT</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"80"</span> (2)
+</pre>
+</td></tr>
+<tr><th>REMOTE_ADDR</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"127.0.0.1"</span> (9)
+</pre>
+</td></tr>
+<tr><th>DOCUMENT_ROOT</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:/xampp/htdocs"</span> (15)
+</pre>
+</td></tr>
+<tr><th>REQUEST_SCHEME</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"http"</span> (4)
+</pre>
+</td></tr>
+<tr><th>CONTEXT_PREFIX</th><td><pre class="tracy-dump"><span class="tracy-dump-string">""</span>
+</pre>
+</td></tr>
+<tr><th>CONTEXT_DOCUMENT_ROOT</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:/xampp/htdocs"</span> (15)
+</pre>
+</td></tr>
+<tr><th>SERVER_ADMIN</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"postmaster@localhost"</span> (20)
+</pre>
+</td></tr>
+<tr><th>SCRIPT_FILENAME</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"C:/xampp/htdocs/Records_nette/www/index.php"</span> (43)
+</pre>
+</td></tr>
+<tr><th>REMOTE_PORT</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"2903"</span> (4)
+</pre>
+</td></tr>
+<tr><th>REDIRECT_URL</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/Records_nette/www/seznam-clanku"</span> (32)
+</pre>
+</td></tr>
+<tr><th>GATEWAY_INTERFACE</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"CGI/1.1"</span> (7)
+</pre>
+</td></tr>
+<tr><th>SERVER_PROTOCOL</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"HTTP/1.1"</span> (8)
+</pre>
+</td></tr>
+<tr><th>REQUEST_METHOD</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"GET"</span> (3)
+</pre>
+</td></tr>
+<tr><th>QUERY_STRING</th><td><pre class="tracy-dump"><span class="tracy-dump-string">""</span>
+</pre>
+</td></tr>
+<tr><th>REQUEST_URI</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/Records_nette/seznam-clanku"</span> (28)
+</pre>
+</td></tr>
+<tr><th>SCRIPT_NAME</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/Records_nette/www/index.php"</span> (28)
+</pre>
+</td></tr>
+<tr><th>PHP_SELF</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"/Records_nette/www/index.php"</span> (28)
+</pre>
+</td></tr>
+<tr><th>REQUEST_TIME</th><td><pre class="tracy-dump"><span class="tracy-dump-number">1573185216</span>
+</pre>
+</td></tr>
+			</table>
+			</div>
+
+
+			<h3><a data-tracy-ref="^+" class="tracy-toggle">$_SESSION</a></h3>
+			<div class="outer">
+						<table>
+			<tr><th>__NF</th><td><i>Nette Session</i></td></tr>
+<tr><th>_tracy</th><td><pre class="tracy-dump" data-tracy-dump='[["redirect",null],["bar",[]],["bluescreen",[]]]'></pre>
+</td></tr>
+<tr><th>uzivatel</th><td><pre class="tracy-dump" data-tracy-dump='[["uzivatele_id",1],[0,1],["jmeno","Jaroslav Patrn\u00fd"],[1,"Jaroslav Patrn\u00fd"],["admin",1],[2,1],["heslo","$2y$10$pkF0494ki4Ot7EU0NP1\/ROO8AcF2m1t5dSWY\/K9nGNjr..sXQe18S"],[3,"$2y$10$pkF0494ki4Ot7EU0NP1\/ROO8AcF2m1t5dSWY\/K9nGNjr..sXQe18S"]]'></pre>
+</td></tr>
+			</table>
+						</div>
+
+
+						<h3><a data-tracy-ref="^+" class="tracy-toggle">Nette Session</a></h3>
+			<div class="outer">
+			<table>
+			<tr><th>Nette.Http.UserStorage/</th><td><pre class="tracy-dump" data-tracy-dump='[["authenticated",true],["identity",{"object":"032"}],["reason",null],["authTime",1571612359],["expireDelta",null]]'></pre>
+</td></tr>
+			</table>
+			</div>
+			
+
+			
+
+			<h3><a data-tracy-ref="^+" class="tracy-toggle tracy-collapsed">Configuration options</a></h3>
+			<div class="outer tracy-collapsed">
+			<div class="center">
+<hr />
+<h1>Configuration</h1>
+<h2><a name="module_apache2handler">apache2handler</a></h2>
+<table>
+<tr><td class="e">Apache Version </td><td class="v">Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.6.4 </td></tr>
+<tr><td class="e">Apache API Version </td><td class="v">20120211 </td></tr>
+<tr><td class="e">Server Administrator </td><td class="v">postmaster@localhost </td></tr>
+<tr><td class="e">Hostname:Port </td><td class="v">localhost:80 </td></tr>
+<tr><td class="e">Max Requests </td><td class="v">Per Child: 0 - Keep Alive: on - Max Per Connection: 100 </td></tr>
+<tr><td class="e">Timeouts </td><td class="v">Connection: 300 - Keep-Alive: 5 </td></tr>
+<tr><td class="e">Virtual Server </td><td class="v">No </td></tr>
+<tr><td class="e">Server Root </td><td class="v">C:/xampp/apache </td></tr>
+<tr><td class="e">Loaded Modules </td><td class="v">core mod_win32 mpm_winnt http_core mod_so mod_access_compat mod_actions mod_alias mod_allowmethods mod_asis mod_auth_basic mod_authn_core mod_authn_file mod_authz_core mod_authz_groupfile mod_authz_host mod_authz_user mod_autoindex mod_cgi mod_dav_lock mod_dir mod_env mod_headers mod_include mod_info mod_isapi mod_log_config mod_cache_disk mod_mime mod_negotiation mod_proxy mod_proxy_ajp mod_rewrite mod_setenvif mod_ssl mod_status mod_php5 </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">engine</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">last_modified</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">xbithack</td><td class="v">0</td><td class="v">0</td></tr>
+</table>
+<h2>Apache Environment</h2>
+<table>
+<tr class="h"><th>Variable</th><th>Value</th></tr>
+<tr><td class="e">REDIRECT_REDIRECT_MIBDIRS </td><td class="v">C:/xampp/php/extras/mibs </td></tr>
+<tr><td class="e">REDIRECT_REDIRECT_MYSQL_HOME </td><td class="v">\xampp\mysql\bin </td></tr>
+<tr><td class="e">REDIRECT_REDIRECT_OPENSSL_CONF </td><td class="v">C:/xampp/apache/bin/openssl.cnf </td></tr>
+<tr><td class="e">REDIRECT_REDIRECT_PHP_PEAR_SYSCONF_DIR </td><td class="v">\xampp\php </td></tr>
+<tr><td class="e">REDIRECT_REDIRECT_PHPRC </td><td class="v">\xampp\php </td></tr>
+<tr><td class="e">REDIRECT_REDIRECT_TMP </td><td class="v">\xampp\tmp </td></tr>
+<tr><td class="e">REDIRECT_REDIRECT_STATUS </td><td class="v">200 </td></tr>
+<tr><td class="e">REDIRECT_MIBDIRS </td><td class="v">C:/xampp/php/extras/mibs </td></tr>
+<tr><td class="e">REDIRECT_MYSQL_HOME </td><td class="v">\xampp\mysql\bin </td></tr>
+<tr><td class="e">REDIRECT_OPENSSL_CONF </td><td class="v">C:/xampp/apache/bin/openssl.cnf </td></tr>
+<tr><td class="e">REDIRECT_PHP_PEAR_SYSCONF_DIR </td><td class="v">\xampp\php </td></tr>
+<tr><td class="e">REDIRECT_PHPRC </td><td class="v">\xampp\php </td></tr>
+<tr><td class="e">REDIRECT_TMP </td><td class="v">\xampp\tmp </td></tr>
+<tr><td class="e">REDIRECT_STATUS </td><td class="v">200 </td></tr>
+<tr><td class="e">MIBDIRS </td><td class="v">C:/xampp/php/extras/mibs </td></tr>
+<tr><td class="e">MYSQL_HOME </td><td class="v">\xampp\mysql\bin </td></tr>
+<tr><td class="e">OPENSSL_CONF </td><td class="v">C:/xampp/apache/bin/openssl.cnf </td></tr>
+<tr><td class="e">PHP_PEAR_SYSCONF_DIR </td><td class="v">\xampp\php </td></tr>
+<tr><td class="e">PHPRC </td><td class="v">\xampp\php </td></tr>
+<tr><td class="e">TMP </td><td class="v">\xampp\tmp </td></tr>
+<tr><td class="e">HTTP_HOST </td><td class="v">localhost </td></tr>
+<tr><td class="e">HTTP_CONNECTION </td><td class="v">keep-alive </td></tr>
+<tr><td class="e">HTTP_CACHE_CONTROL </td><td class="v">max-age=0 </td></tr>
+<tr><td class="e">HTTP_ACCEPT </td><td class="v">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8 </td></tr>
+<tr><td class="e">HTTP_UPGRADE_INSECURE_REQUESTS </td><td class="v">1 </td></tr>
+<tr><td class="e">HTTP_USER_AGENT </td><td class="v">Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36 </td></tr>
+<tr><td class="e">HTTP_ACCEPT_ENCODING </td><td class="v">gzip, deflate, sdch </td></tr>
+<tr><td class="e">HTTP_ACCEPT_LANGUAGE </td><td class="v">cs-CZ,cs;q=0.8 </td></tr>
+<tr><td class="e">HTTP_COOKIE </td><td class="v">SL_GWPT_Show_Hide_tmp=undefined; PHPSESSID=f97namdoet55qa9s071t9mcb25; SL_G_WPT_TO=cs; SL_wptGlobTipTmp=undefined </td></tr>
+<tr><td class="e">PATH </td><td class="v">C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Common Files\Microsoft Shared\Windows Live </td></tr>
+<tr><td class="e">SystemRoot </td><td class="v">C:\WINDOWS </td></tr>
+<tr><td class="e">COMSPEC </td><td class="v">C:\WINDOWS\system32\cmd.exe </td></tr>
+<tr><td class="e">PATHEXT </td><td class="v">.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH </td></tr>
+<tr><td class="e">WINDIR </td><td class="v">C:\WINDOWS </td></tr>
+<tr><td class="e">SERVER_SIGNATURE </td><td class="v">&lt;address&gt;Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.6.4 Server at localhost Port 80&lt;/address&gt;
+ </td></tr>
+<tr><td class="e">SERVER_SOFTWARE </td><td class="v">Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.6.4 </td></tr>
+<tr><td class="e">SERVER_NAME </td><td class="v">localhost </td></tr>
+<tr><td class="e">SERVER_ADDR </td><td class="v">127.0.0.1 </td></tr>
+<tr><td class="e">SERVER_PORT </td><td class="v">80 </td></tr>
+<tr><td class="e">REMOTE_ADDR </td><td class="v">127.0.0.1 </td></tr>
+<tr><td class="e">DOCUMENT_ROOT </td><td class="v">C:/xampp/htdocs </td></tr>
+<tr><td class="e">REQUEST_SCHEME </td><td class="v">http </td></tr>
+<tr><td class="e">CONTEXT_PREFIX </td><td class="v"><i>no value</i> </td></tr>
+<tr><td class="e">CONTEXT_DOCUMENT_ROOT </td><td class="v">C:/xampp/htdocs </td></tr>
+<tr><td class="e">SERVER_ADMIN </td><td class="v">postmaster@localhost </td></tr>
+<tr><td class="e">SCRIPT_FILENAME </td><td class="v">C:/xampp/htdocs/Records_nette/www/index.php </td></tr>
+<tr><td class="e">REMOTE_PORT </td><td class="v">2903 </td></tr>
+<tr><td class="e">REDIRECT_URL </td><td class="v">/Records_nette/www/seznam-clanku </td></tr>
+<tr><td class="e">GATEWAY_INTERFACE </td><td class="v">CGI/1.1 </td></tr>
+<tr><td class="e">SERVER_PROTOCOL </td><td class="v">HTTP/1.1 </td></tr>
+<tr><td class="e">REQUEST_METHOD </td><td class="v">GET </td></tr>
+<tr><td class="e">QUERY_STRING </td><td class="v"><i>no value</i> </td></tr>
+<tr><td class="e">REQUEST_URI </td><td class="v">/Records_nette/seznam-clanku </td></tr>
+<tr><td class="e">SCRIPT_NAME </td><td class="v">/Records_nette/www/index.php </td></tr>
+</table>
+<h2>HTTP Headers Information</h2>
+<table>
+<tr class="h"><th colspan="2">HTTP Request Headers</th></tr>
+<tr><td class="e">HTTP Request </td><td class="v">GET /Records_nette/seznam-clanku HTTP/1.1 </td></tr>
+<tr><td class="e">Host </td><td class="v">localhost </td></tr>
+<tr><td class="e">Connection </td><td class="v">keep-alive </td></tr>
+<tr><td class="e">Cache-Control </td><td class="v">max-age=0 </td></tr>
+<tr><td class="e">Accept </td><td class="v">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8 </td></tr>
+<tr><td class="e">Upgrade-Insecure-Requests </td><td class="v">1 </td></tr>
+<tr><td class="e">User-Agent </td><td class="v">Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36 </td></tr>
+<tr><td class="e">Accept-Encoding </td><td class="v">gzip, deflate, sdch </td></tr>
+<tr><td class="e">Accept-Language </td><td class="v">cs-CZ,cs;q=0.8 </td></tr>
+<tr><td class="e">Cookie </td><td class="v">SL_GWPT_Show_Hide_tmp=undefined; PHPSESSID=f97namdoet55qa9s071t9mcb25; SL_G_WPT_TO=cs; SL_wptGlobTipTmp=undefined </td></tr>
+<tr class="h"><th colspan="2">HTTP Response Headers</th></tr>
+<tr><td class="e">X-Powered-By </td><td class="v">Nette Framework </td></tr>
+<tr><td class="e">X-Frame-Options </td><td class="v">SAMEORIGIN </td></tr>
+<tr><td class="e">Expires </td><td class="v">Thu, 19 Nov 1981 08:52:00 GMT </td></tr>
+<tr><td class="e">Cache-Control </td><td class="v">no-store, no-cache, must-revalidate, post-check=0, pre-check=0 </td></tr>
+<tr><td class="e">Pragma </td><td class="v">no-cache </td></tr>
+<tr><td class="e">Set-Cookie </td><td class="v">PHPSESSID=f97namdoet55qa9s071t9mcb25; expires=Fri, 22-Nov-2019 03:53:42 GMT; Max-Age=1209600; path=/; httponly </td></tr>
+</table>
+<h2><a name="module_apc">apc</a></h2>
+<table>
+<tr><td class="e">APC support </td><td class="v">Emulated </td></tr>
+</table>
+<h2><a name="module_apcu">apcu</a></h2>
+<table>
+<tr class="h"><th>APCu Support</th><th>Enabled</th></tr>
+<tr><td class="e">Version </td><td class="v">4.0.8 </td></tr>
+<tr><td class="e">APCu Debugging </td><td class="v">Disabled </td></tr>
+<tr><td class="e">MMAP Support </td><td class="v">Disabled </td></tr>
+<tr><td class="e">Serialization Support </td><td class="v">php </td></tr>
+<tr><td class="e">Revision </td><td class="v">$Revision: 328290 $ </td></tr>
+<tr><td class="e">Build Date </td><td class="v">Jan  3 2015 21:04:08 </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">apc.coredump_unmap</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">apc.enable_cli</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">apc.enabled</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">apc.entries_hint</td><td class="v">4096</td><td class="v">4096</td></tr>
+<tr><td class="e">apc.gc_ttl</td><td class="v">18000</td><td class="v">18000</td></tr>
+<tr><td class="e">apc.preload_path</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">apc.rfc1867</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">apc.rfc1867_freq</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">apc.rfc1867_name</td><td class="v">APC_UPLOAD_PROGRESS</td><td class="v">APC_UPLOAD_PROGRESS</td></tr>
+<tr><td class="e">apc.rfc1867_prefix</td><td class="v">upload_</td><td class="v">upload_</td></tr>
+<tr><td class="e">apc.rfc1867_ttl</td><td class="v">18000</td><td class="v">18000</td></tr>
+<tr><td class="e">apc.serializer</td><td class="v">php</td><td class="v">php</td></tr>
+<tr><td class="e">apc.shm_segments</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">apc.shm_size</td><td class="v">32M</td><td class="v">32M</td></tr>
+<tr><td class="e">apc.slam_defense</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">apc.smart</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">apc.ttl</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">apc.use_request_time</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">apc.writable</td><td class="v">/tmp</td><td class="v">/tmp</td></tr>
+</table>
+<h2><a name="module_bcmath">bcmath</a></h2>
+<table>
+<tr><td class="e">BCMath support </td><td class="v">enabled </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">bcmath.scale</td><td class="v">0</td><td class="v">0</td></tr>
+</table>
+<h2><a name="module_blenc">blenc</a></h2>
+<table>
+<tr><td class="e">Blenc support </td><td class="v">Enabled </td></tr>
+<tr><td class="e">Blenc version </td><td class="v">1.1.4b </td></tr>
+<tr><td class="e">Blenc expire date </td><td class="v"><i>no value</i> </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">blenc.key_file</td><td class="v">/usr/local/etc/blenckeys</td><td class="v">/usr/local/etc/blenckeys</td></tr>
+</table>
+<h2><a name="module_bz2">bz2</a></h2>
+<table>
+<tr><td class="e">BZip2 Support </td><td class="v">Enabled </td></tr>
+<tr><td class="e">Stream Wrapper support </td><td class="v">compress.bzip2:// </td></tr>
+<tr><td class="e">Stream Filter support </td><td class="v">bzip2.decompress, bzip2.compress </td></tr>
+<tr><td class="e">BZip2 Version </td><td class="v">1.0.6, 6-Sept-2010 </td></tr>
+</table>
+<h2><a name="module_calendar">calendar</a></h2>
+<table>
+<tr><td class="e">Calendar support </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_com_dotnet">com_dotnet</a></h2>
+<table>
+<tr class="h"><th>COM support</th><th>enabled</th></tr>
+<tr class="h"><th>DCOM support</th><th>disabled</th></tr>
+<tr class="h"><th>.Net support</th><th>enabled</th></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">com.allow_dcom</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">com.autoregister_casesensitive</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">com.autoregister_typelib</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">com.autoregister_verbose</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">com.code_page</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">com.typelib_file</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_Core">Core</a></h2>
+<table>
+<tr><td class="e">PHP Version </td><td class="v">5.6.4 </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">allow_url_fopen</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">allow_url_include</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">always_populate_raw_post_data</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">arg_separator.input</td><td class="v">&amp;</td><td class="v">&amp;</td></tr>
+<tr><td class="e">arg_separator.output</td><td class="v">&amp;</td><td class="v">&amp;</td></tr>
+<tr><td class="e">asp_tags</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">auto_append_file</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">auto_globals_jit</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">auto_prepend_file</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">browscap</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">default_charset</td><td class="v">UTF-8</td><td class="v">UTF-8</td></tr>
+<tr><td class="e">default_mimetype</td><td class="v">text/html</td><td class="v">text/html</td></tr>
+<tr><td class="e">disable_classes</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">disable_functions</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">display_errors</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">display_startup_errors</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">doc_root</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">docref_ext</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">docref_root</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">enable_dl</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">enable_post_data_reading</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">error_append_string</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">error_log</td><td class="v">php_errors.log</td><td class="v">php_errors.log</td></tr>
+<tr><td class="e">error_prepend_string</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">error_reporting</td><td class="v">0</td><td class="v">32767</td></tr>
+<tr><td class="e">exit_on_timeout</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">expose_php</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">extension_dir</td><td class="v">C:\xampp\php\ext</td><td class="v">C:\xampp\php\ext</td></tr>
+<tr><td class="e">file_uploads</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">highlight.comment</td><td class="v"><font style="color: #998; font-style: italic">#998; font-style: italic</font></td><td class="v"><font style="color: #FF8000">#FF8000</font></td></tr>
+<tr><td class="e">highlight.default</td><td class="v"><font style="color: #000">#000</font></td><td class="v"><font style="color: #0000BB">#0000BB</font></td></tr>
+<tr><td class="e">highlight.html</td><td class="v"><font style="color: #06B">#06B</font></td><td class="v"><font style="color: #000000">#000000</font></td></tr>
+<tr><td class="e">highlight.keyword</td><td class="v"><font style="color: #D24; font-weight: bold">#D24; font-weight: bold</font></td><td class="v"><font style="color: #007700">#007700</font></td></tr>
+<tr><td class="e">highlight.string</td><td class="v"><font style="color: #080">#080</font></td><td class="v"><font style="color: #DD0000">#DD0000</font></td></tr>
+<tr><td class="e">html_errors</td><td class="v">Off</td><td class="v">On</td></tr>
+<tr><td class="e">ignore_repeated_errors</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">ignore_repeated_source</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">ignore_user_abort</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">implicit_flush</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">include_path</td><td class="v">.;C:\php\pear</td><td class="v">.;C:\php\pear</td></tr>
+<tr><td class="e">input_encoding</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">internal_encoding</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">log_errors</td><td class="v">Off</td><td class="v">On</td></tr>
+<tr><td class="e">log_errors_max_len</td><td class="v">1024</td><td class="v">1024</td></tr>
+<tr><td class="e">mail.add_x_header</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">mail.force_extra_parameters</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mail.log</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">max_execution_time</td><td class="v">30</td><td class="v">30</td></tr>
+<tr><td class="e">max_file_uploads</td><td class="v">20</td><td class="v">20</td></tr>
+<tr><td class="e">max_input_nesting_level</td><td class="v">64</td><td class="v">64</td></tr>
+<tr><td class="e">max_input_time</td><td class="v">60</td><td class="v">60</td></tr>
+<tr><td class="e">max_input_vars</td><td class="v">1000</td><td class="v">1000</td></tr>
+<tr><td class="e">memory_limit</td><td class="v">128M</td><td class="v">128M</td></tr>
+<tr><td class="e">open_basedir</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">output_buffering</td><td class="v">4096</td><td class="v">4096</td></tr>
+<tr><td class="e">output_encoding</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">output_handler</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">post_max_size</td><td class="v">8M</td><td class="v">8M</td></tr>
+<tr><td class="e">precision</td><td class="v">14</td><td class="v">14</td></tr>
+<tr><td class="e">realpath_cache_size</td><td class="v">16K</td><td class="v">16K</td></tr>
+<tr><td class="e">realpath_cache_ttl</td><td class="v">120</td><td class="v">120</td></tr>
+<tr><td class="e">register_argc_argv</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">report_memleaks</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">report_zend_debug</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">request_order</td><td class="v">GP</td><td class="v">GP</td></tr>
+<tr><td class="e">sendmail_from</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">sendmail_path</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">serialize_precision</td><td class="v">17</td><td class="v">17</td></tr>
+<tr><td class="e">short_open_tag</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">SMTP</td><td class="v">localhost</td><td class="v">localhost</td></tr>
+<tr><td class="e">smtp_port</td><td class="v">25</td><td class="v">25</td></tr>
+<tr><td class="e">sql.safe_mode</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">sys_temp_dir</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">track_errors</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">unserialize_callback_func</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">upload_max_filesize</td><td class="v">2M</td><td class="v">2M</td></tr>
+<tr><td class="e">upload_tmp_dir</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">user_dir</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">user_ini.cache_ttl</td><td class="v">300</td><td class="v">300</td></tr>
+<tr><td class="e">user_ini.filename</td><td class="v">.user.ini</td><td class="v">.user.ini</td></tr>
+<tr><td class="e">variables_order</td><td class="v">GPCS</td><td class="v">GPCS</td></tr>
+<tr><td class="e">windows.show_crt_warning</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">xmlrpc_error_number</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">xmlrpc_errors</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">zend.detect_unicode</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">zend.enable_gc</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">zend.multibyte</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">zend.script_encoding</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_couchdb">couchdb</a></h2>
+<table>
+<tr class="h"><th>couchdb</th><th>enabled</th></tr>
+<tr class="h"><th>Version</th><th>0.0.2</th></tr>
+</table>
+<h2><a name="module_crypto">crypto</a></h2>
+<table>
+<tr><td class="e">Crypto Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">Crypto Version </td><td class="v">0.1.1 </td></tr>
+<tr><td class="e">OpenSSL Library Version </td><td class="v">OpenSSL 1.0.1c 10 May 2012 </td></tr>
+<tr><td class="e">OpenSSL Header Version </td><td class="v">OpenSSL 1.0.1j-fips 15 Oct 2014 </td></tr>
+</table>
+<h2><a name="module_ctype">ctype</a></h2>
+<table>
+<tr><td class="e">ctype functions </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_curl">curl</a></h2>
+<table>
+<tr><td class="e">cURL support </td><td class="v">enabled </td></tr>
+<tr><td class="e">cURL Information </td><td class="v">7.39.0 </td></tr>
+<tr><td class="e">Age </td><td class="v">3 </td></tr>
+<tr><td class="e">Features </td></tr>
+<tr><td class="e">AsynchDNS </td><td class="v">Yes </td></tr>
+<tr><td class="e">CharConv </td><td class="v">No </td></tr>
+<tr><td class="e">Debug </td><td class="v">No </td></tr>
+<tr><td class="e">GSS-Negotiate </td><td class="v">No </td></tr>
+<tr><td class="e">IDN </td><td class="v">Yes </td></tr>
+<tr><td class="e">IPv6 </td><td class="v">Yes </td></tr>
+<tr><td class="e">krb4 </td><td class="v">No </td></tr>
+<tr><td class="e">Largefile </td><td class="v">Yes </td></tr>
+<tr><td class="e">libz </td><td class="v">No </td></tr>
+<tr><td class="e">NTLM </td><td class="v">Yes </td></tr>
+<tr><td class="e">NTLMWB </td><td class="v">No </td></tr>
+<tr><td class="e">SPNEGO </td><td class="v">Yes </td></tr>
+<tr><td class="e">SSL </td><td class="v">Yes </td></tr>
+<tr><td class="e">SSPI </td><td class="v">Yes </td></tr>
+<tr><td class="e">TLS-SRP </td><td class="v">No </td></tr>
+<tr><td class="e">Protocols </td><td class="v">dict, file, ftp, ftps, gopher, http, https, imap, imaps, ldap, pop3, pop3s, rtsp, scp, sftp, smtp, smtps, telnet, tftp </td></tr>
+<tr><td class="e">Host </td><td class="v">i386-pc-win32 </td></tr>
+<tr><td class="e">SSL Version </td><td class="v">OpenSSL/1.0.1c </td></tr>
+<tr><td class="e">libSSH Version </td><td class="v">libssh2/1.4.3 </td></tr>
+</table>
+<h2><a name="module_date">date</a></h2>
+<table>
+<tr><td class="e">date/time support </td><td class="v">enabled </td></tr>
+<tr><td class="e">&quot;Olson&quot; Timezone Database Version </td><td class="v">2014.10 </td></tr>
+<tr><td class="e">Timezone Database </td><td class="v">internal </td></tr>
+<tr><td class="e">Default timezone </td><td class="v">Europe/Prague </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">date.default_latitude</td><td class="v">31.7667</td><td class="v">31.7667</td></tr>
+<tr><td class="e">date.default_longitude</td><td class="v">35.2333</td><td class="v">35.2333</td></tr>
+<tr><td class="e">date.sunrise_zenith</td><td class="v">90.583333</td><td class="v">90.583333</td></tr>
+<tr><td class="e">date.sunset_zenith</td><td class="v">90.583333</td><td class="v">90.583333</td></tr>
+<tr><td class="e">date.timezone</td><td class="v">Europe/Prague</td><td class="v">Europe/Amsterdam</td></tr>
+</table>
+<h2><a name="module_dba">dba</a></h2>
+<table>
+<tr><td class="e">DBA support </td><td class="v">enabled </td></tr>
+<tr><td class="e">Supported handlers </td><td class="v">cdb cdb_make db3 inifile flatfile  </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">dba.default_handler</td><td class="v">flatfile</td><td class="v">flatfile</td></tr>
+</table>
+<h2><a name="module_dbase">dbase</a></h2>
+<table>
+<tr><td class="e">Version </td><td class="v">5.1.0 </td></tr>
+</table>
+<h2><a name="module_dio">dio</a></h2>
+<table>
+<tr class="h"><th>dio support</th><th>enabled</th></tr>
+<tr><td class="e">version </td><td class="v">0.0.7 </td></tr>
+</table>
+<h2><a name="module_discount">discount</a></h2>
+<table>
+<tr class="h"><th>Discount markdown</th><th>enabled</th></tr>
+<tr><td class="e">Discount Ext. version </td><td class="v">1.0.0 </td></tr>
+<tr><td class="e">Discount lib version </td><td class="v">2.1.3.1-dev DL=BOTH ID-ANCHOR GITHUB-TAGS FENCED-CODE </td></tr>
+</table>
+<h2><a name="module_dom">dom</a></h2>
+<table>
+<tr><td class="e">DOM/XML </td><td class="v">enabled </td></tr>
+<tr><td class="e">DOM/XML API Version </td><td class="v">20031129 </td></tr>
+<tr><td class="e">libxml Version </td><td class="v">2.9.1 </td></tr>
+<tr><td class="e">HTML Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">XPath Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">XPointer Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">Schema Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">RelaxNG Support </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_doublemetaphone">doublemetaphone</a></h2>
+<table>
+<tr class="h"><th>Double Metaphone support</th><th>enabled</th></tr>
+<tr><td class="e">version </td><td class="v">1.0.1 </td></tr>
+<tr class="h"><th colspan="2">compiled as dynamic module</th></tr>
+</table>
+<h2><a name="module_ereg">ereg</a></h2>
+<table>
+<tr><td class="e">Regex Library </td><td class="v">Bundled library enabled </td></tr>
+</table>
+<h2><a name="module_event">event</a></h2>
+<table>
+<tr class="h"><th>Event support</th><th>enabled</th></tr>
+<tr class="h"><th>Sockets support</th><th>enabled</th></tr>
+<tr><td class="e">Debug support </td><td class="v">disabled </td></tr>
+<tr><td class="e">Extra functionality support including HTTP, DNS, and RPC </td><td class="v">enabled </td></tr>
+<tr><td class="e">OpenSSL support </td><td class="v">enabled </td></tr>
+<tr><td class="e">Thread safety support </td><td class="v">enabled </td></tr>
+<tr><td class="e">Extension version </td><td class="v">1.11.2 </td></tr>
+<tr><td class="e">libevent2 headers version </td><td class="v">2.1.4-alpha-dev </td></tr>
+</table>
+<h2><a name="module_exif">exif</a></h2>
+<table>
+<tr><td class="e">EXIF Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">EXIF Version </td><td class="v">1.4 $Id: ab2a50435139d06a6aaac1b47adb458267625069 $ </td></tr>
+<tr><td class="e">Supported EXIF Version </td><td class="v">0220 </td></tr>
+<tr><td class="e">Supported filetypes </td><td class="v">JPEG,TIFF </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">exif.decode_jis_intel</td><td class="v">JIS</td><td class="v">JIS</td></tr>
+<tr><td class="e">exif.decode_jis_motorola</td><td class="v">JIS</td><td class="v">JIS</td></tr>
+<tr><td class="e">exif.decode_unicode_intel</td><td class="v">UCS-2LE</td><td class="v">UCS-2LE</td></tr>
+<tr><td class="e">exif.decode_unicode_motorola</td><td class="v">UCS-2BE</td><td class="v">UCS-2BE</td></tr>
+<tr><td class="e">exif.encode_jis</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">exif.encode_unicode</td><td class="v">ISO-8859-15</td><td class="v">ISO-8859-15</td></tr>
+</table>
+<h2><a name="module_fileinfo">fileinfo</a></h2>
+<table>
+<tr><td class="e">fileinfo support </td><td class="v">enabled </td></tr>
+<tr><td class="e">version </td><td class="v">1.0.5 </td></tr>
+<tr><td class="e">libmagic </td><td class="v">517 </td></tr>
+</table>
+<h2><a name="module_filter">filter</a></h2>
+<table>
+<tr><td class="e">Input Validation and Filtering </td><td class="v">enabled </td></tr>
+<tr><td class="e">Revision </td><td class="v">$Id: a408ee30dc87767f918de9439364deec6760290c $ </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">filter.default</td><td class="v">unsafe_raw</td><td class="v">unsafe_raw</td></tr>
+<tr><td class="e">filter.default_flags</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_fribidi">fribidi</a></h2>
+<table>
+<tr class="h"><th>FriBidi support</th><th>enabled</th></tr>
+<tr><td class="e">FriBidi version </td><td class="v">0.19.5 </td></tr>
+<tr><td class="e">Extension version </td><td class="v">1.2 </td></tr>
+</table>
+<h2><a name="module_ftp">ftp</a></h2>
+<table>
+<tr><td class="e">FTP support </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_gd">gd</a></h2>
+<table>
+<tr><td class="e">GD Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">GD Version </td><td class="v">bundled (2.1.0 compatible) </td></tr>
+<tr><td class="e">FreeType Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">FreeType Linkage </td><td class="v">with freetype </td></tr>
+<tr><td class="e">FreeType Version </td><td class="v">2.5.4 </td></tr>
+<tr><td class="e">T1Lib Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">GIF Read Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">GIF Create Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">JPEG Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">libJPEG Version </td><td class="v">9 compatible </td></tr>
+<tr><td class="e">PNG Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">libPNG Version </td><td class="v">1.6.15 </td></tr>
+<tr><td class="e">WBMP Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">XPM Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">libXpm Version </td><td class="v">30511 </td></tr>
+<tr><td class="e">XBM Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">WebP Support </td><td class="v">enabled </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">gd.jpeg_ignore_warning</td><td class="v">0</td><td class="v">0</td></tr>
+</table>
+<h2><a name="module_gender">gender</a></h2>
+<table>
+<tr class="h"><th>gender support</th><th>enabled</th></tr>
+<tr class="h"><th>Version </th><th>1.0.0</th></tr>
+<tr class="h"><th>Gender API </th><th>version 1.2.1, 2013-06-02</th></tr>
+</table>
+<h2><a name="module_geoip">geoip</a></h2>
+<table>
+<tr class="h"><th>geoip support</th><th>enabled</th></tr>
+<tr><td class="e">geoip extension version </td><td class="v">1.1.1-dev </td></tr>
+<tr><td class="e">geoip library version </td><td class="v">1004008 </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">geoip.custom_directory</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_gettext">gettext</a></h2>
+<table>
+<tr><td class="e">GetText Support </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_gmp">gmp</a></h2>
+<table>
+<tr><td class="e">gmp support </td><td class="v">enabled </td></tr>
+<tr><td class="e">MPIR version </td><td class="v">2.6.0 </td></tr>
+</table>
+<h2><a name="module_haru">haru</a></h2>
+<table>
+<tr class="h"><th>Haru PDF support</th><th>enabled</th></tr>
+<tr><td class="e">Version </td><td class="v">1.0.5 </td></tr>
+<tr><td class="e">libharu version </td><td class="v">2.3.0RC2 </td></tr>
+</table>
+<h2><a name="module_hash">hash</a></h2>
+<table>
+<tr><td class="e">hash support </td><td class="v">enabled </td></tr>
+<tr><td class="e">Hashing Engines </td><td class="v">md2 md4 md5 sha1 sha224 sha256 sha384 sha512 ripemd128 ripemd160 ripemd256 ripemd320 whirlpool tiger128,3 tiger160,3 tiger192,3 tiger128,4 tiger160,4 tiger192,4 snefru snefru256 gost gost-crypto adler32 crc32 crc32b fnv132 fnv1a32 fnv164 fnv1a64 joaat haval128,3 haval160,3 haval192,3 haval224,3 haval256,3 haval128,4 haval160,4 haval192,4 haval224,4 haval256,4 haval128,5 haval160,5 haval192,5 haval224,5 haval256,5  </td></tr>
+</table>
+<h2><a name="module_hrtime">hrtime</a></h2>
+<table>
+<tr class="h"><th>hrtime support</th><th>enabled</th></tr>
+<tr class="h"><th>Version</th><th>0.5.0</th></tr>
+</table>
+<h2><a name="module_htscanner">htscanner</a></h2>
+<table>
+<tr class="h"><th>htscanner support</th><th>enabled</th></tr>
+<tr><td class="e">PECL Module version </td><td class="v">1.0.2-dev ($Id: htscanner.c 312503 2011-06-26 17:56:58Z derick $) </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">htscanner.config_file</td><td class="v">.htaccess</td><td class="v">.htaccess</td></tr>
+<tr><td class="e">htscanner.default_docroot</td><td class="v">/</td><td class="v">/</td></tr>
+<tr><td class="e">htscanner.default_ttl</td><td class="v">300</td><td class="v">300</td></tr>
+<tr><td class="e">htscanner.stop_on_error</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">htscanner.verbose</td><td class="v">0</td><td class="v">0</td></tr>
+</table>
+<h2><a name="module_http">http</a></h2>
+<table>
+<tr class="h"><th>HTTP Support</th><th>enabled</th></tr>
+<tr><td class="e">Extension Version </td><td class="v">2.1.4 </td></tr>
+</table>
+<table>
+<tr class="h"><th>Used Library</th><th>Compiled</th><th>Linked</th></tr>
+<tr><td class="e">libz </td><td class="v">1.2.8 </td><td class="v">1.2.8 </td></tr>
+<tr><td class="e">libcurl </td><td class="v">7.39.0 </td><td class="v">7.39.0 </td></tr>
+<tr><td class="e">libevent </td><td class="v">2.1.4-alpha-dev </td><td class="v">2.1.4-alpha-dev </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">http.etag.mode</td><td class="v">crc32b</td><td class="v">crc32b</td></tr>
+</table>
+<h2><a name="module_iconv">iconv</a></h2>
+<table>
+<tr><td class="e">iconv support </td><td class="v">enabled </td></tr>
+<tr><td class="e">iconv implementation </td><td class="v">&quot;libiconv&quot; </td></tr>
+<tr><td class="e">iconv library version </td><td class="v">1.14 </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">iconv.input_encoding</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">iconv.internal_encoding</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">iconv.output_encoding</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_igbinary">igbinary</a></h2>
+<table>
+<tr><td class="e">igbinary support </td><td class="v">enabled </td></tr>
+<tr><td class="e">igbinary version </td><td class="v">1.1.2-dev </td></tr>
+<tr><td class="e">igbinary APC serializer ABI </td><td class="v">no </td></tr>
+<tr><td class="e">igbinary session support </td><td class="v">yes </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">igbinary.compact_strings</td><td class="v">On</td><td class="v">On</td></tr>
+</table>
+<h2><a name="module_imap">imap</a></h2>
+<table>
+<tr><td class="e">IMAP c-Client Version </td><td class="v">2007f </td></tr>
+<tr><td class="e">SSL Support </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_jsmin">jsmin</a></h2>
+<table>
+<tr class="h"><th>jsmin support</th><th>enabled</th></tr>
+<tr><td class="e">jsmin version </td><td class="v">1.0.0 </td></tr>
+<tr><td class="e">jsmin notes </td><td class="v">Port of Douglas Crockford&#039;s JSMin </td></tr>
+</table>
+<h2><a name="module_json">json</a></h2>
+<table>
+<tr><td class="e">json support </td><td class="v">enabled </td></tr>
+<tr><td class="e">json version </td><td class="v">1.2.1 </td></tr>
+</table>
+<h2><a name="module_judy">judy</a></h2>
+<table>
+<tr class="h"><th>Judy support</th><th>enabled</th></tr>
+<tr><td class="e">PHP Judy version </td><td class="v">1.0.2 </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">judy.string.maxlength</td><td class="v">65536</td><td class="v">65536</td></tr>
+</table>
+<h2><a name="module_libxml">libxml</a></h2>
+<table>
+<tr><td class="e">libXML support </td><td class="v">active </td></tr>
+<tr><td class="e">libXML Compiled Version </td><td class="v">2.9.1 </td></tr>
+<tr><td class="e">libXML Loaded Version </td><td class="v">20901 </td></tr>
+<tr><td class="e">libXML streams </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_lzf">lzf</a></h2>
+<table>
+<tr class="h"><th>lzf support</th><th>enabled</th></tr>
+<tr><td class="e">version </td><td class="v">1.6.2 </td></tr>
+<tr><td class="e">optimized for </td><td class="v">speed </td></tr>
+</table>
+<h2><a name="module_mailparse">mailparse</a></h2>
+<table>
+<tr class="h"><th>mailparse support</th><th>enabled</th></tr>
+<tr><td class="e">Extension Version </td><td class="v">2.1.6 </td></tr>
+<tr><td class="e">Revision </td><td class="v">$Revision: 305002 $ </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">mailparse.def_charset</td><td class="v">us-ascii</td><td class="v">us-ascii</td></tr>
+</table>
+<h2><a name="module_mbstring">mbstring</a></h2>
+<table>
+<tr><td class="e">Multibyte Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">Multibyte string engine </td><td class="v">libmbfl </td></tr>
+<tr><td class="e">HTTP input encoding translation </td><td class="v">enabled </td></tr>
+<tr><td class="e">libmbfl version </td><td class="v">1.3.2 </td></tr>
+</table>
+<table>
+<tr class="h"><th>mbstring extension makes use of "streamable kanji code filter and converter", which is distributed under the GNU Lesser General Public License version 2.1.</th></tr>
+</table>
+<table>
+<tr><td class="e">Multibyte (japanese) regex support </td><td class="v">enabled </td></tr>
+<tr><td class="e">Multibyte regex (oniguruma) version </td><td class="v">5.9.5 </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">mbstring.detect_order</td><td class="v">UTF-8</td><td class="v">UTF-8</td></tr>
+<tr><td class="e">mbstring.encoding_translation</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">mbstring.func_overload</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">mbstring.http_input</td><td class="v">auto</td><td class="v">auto</td></tr>
+<tr><td class="e">mbstring.http_output</td><td class="v">UTF-8</td><td class="v">UTF-8</td></tr>
+<tr><td class="e">mbstring.http_output_conv_mimetypes</td><td class="v">^(text/|application/xhtml\+xml)</td><td class="v">^(text/|application/xhtml\+xml)</td></tr>
+<tr><td class="e">mbstring.internal_encoding</td><td class="v">UTF-8</td><td class="v">UTF-8</td></tr>
+<tr><td class="e">mbstring.language</td><td class="v">neutral</td><td class="v">neutral</td></tr>
+<tr><td class="e">mbstring.strict_detection</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">mbstring.substitute_character</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_mcrypt">mcrypt</a></h2>
+<table>
+<tr class="h"><th>mcrypt support</th><th>enabled</th></tr>
+<tr class="h"><th>mcrypt_filter support</th><th>enabled</th></tr>
+<tr><td class="e">Version </td><td class="v">2.5.8 </td></tr>
+<tr><td class="e">Api No </td><td class="v">20021217 </td></tr>
+<tr><td class="e">Supported ciphers </td><td class="v">cast-128 gost rijndael-128 twofish cast-256 loki97 rijndael-192 saferplus wake blowfish-compat des rijndael-256 serpent xtea blowfish enigma rc2 tripledes arcfour  </td></tr>
+<tr><td class="e">Supported modes </td><td class="v">cbc cfb ctr ecb ncfb nofb ofb stream  </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">mcrypt.algorithms_dir</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mcrypt.modes_dir</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_memcache">memcache</a></h2>
+<table>
+<tr class="h"><th>memcache support</th><th>enabled</th></tr>
+<tr><td class="e">Active persistent connections </td><td class="v">0 </td></tr>
+<tr><td class="e">Version </td><td class="v">2.2.7 </td></tr>
+<tr><td class="e">Revision </td><td class="v">$Revision: 328234 $ </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">memcache.allow_failover</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">memcache.chunk_size</td><td class="v">8192</td><td class="v">8192</td></tr>
+<tr><td class="e">memcache.default_port</td><td class="v">11211</td><td class="v">11211</td></tr>
+<tr><td class="e">memcache.default_timeout_ms</td><td class="v">1000</td><td class="v">1000</td></tr>
+<tr><td class="e">memcache.hash_function</td><td class="v">crc32</td><td class="v">crc32</td></tr>
+<tr><td class="e">memcache.hash_strategy</td><td class="v">standard</td><td class="v">standard</td></tr>
+<tr><td class="e">memcache.max_failover_attempts</td><td class="v">20</td><td class="v">20</td></tr>
+</table>
+<h2><a name="module_mhash">mhash</a></h2>
+<table>
+<tr><td class="e">MHASH support </td><td class="v">Enabled </td></tr>
+<tr><td class="e">MHASH API Version </td><td class="v">Emulated Support </td></tr>
+</table>
+<h2><a name="module_msgpack">msgpack</a></h2>
+<table>
+<tr><td class="e">MessagePack Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">Session Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">extension Version </td><td class="v">0.5.6-dev </td></tr>
+<tr><td class="e">header Version </td><td class="v">0.5.4 </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">msgpack.error_display</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">msgpack.illegal_key_insert</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">msgpack.php_only</td><td class="v">On</td><td class="v">On</td></tr>
+</table>
+<h2><a name="module_mysql">mysql</a></h2>
+<table>
+<tr class="h"><th>MySQL Support</th><th>enabled</th></tr>
+<tr><td class="e">Active Persistent Links </td><td class="v">0 </td></tr>
+<tr><td class="e">Active Links </td><td class="v">0 </td></tr>
+<tr><td class="e">Client API version </td><td class="v">mysqlnd 5.0.11-dev - 20120503 - $Id: f373ea5dd5538761406a8022a4b8a374418b240e $ </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">mysql.allow_local_infile</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">mysql.allow_persistent</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">mysql.connect_timeout</td><td class="v">60</td><td class="v">60</td></tr>
+<tr><td class="e">mysql.default_host</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mysql.default_password</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mysql.default_port</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mysql.default_socket</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mysql.default_user</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mysql.max_links</td><td class="v">Unlimited</td><td class="v">Unlimited</td></tr>
+<tr><td class="e">mysql.max_persistent</td><td class="v">Unlimited</td><td class="v">Unlimited</td></tr>
+<tr><td class="e">mysql.trace_mode</td><td class="v">Off</td><td class="v">Off</td></tr>
+</table>
+<h2><a name="module_mysqli">mysqli</a></h2>
+<table>
+<tr class="h"><th>MysqlI Support</th><th>enabled</th></tr>
+<tr><td class="e">Client API library version </td><td class="v">mysqlnd 5.0.11-dev - 20120503 - $Id: f373ea5dd5538761406a8022a4b8a374418b240e $ </td></tr>
+<tr><td class="e">Active Persistent Links </td><td class="v">0 </td></tr>
+<tr><td class="e">Inactive Persistent Links </td><td class="v">0 </td></tr>
+<tr><td class="e">Active Links </td><td class="v">0 </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">mysqli.allow_local_infile</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">mysqli.allow_persistent</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">mysqli.default_host</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mysqli.default_port</td><td class="v">3306</td><td class="v">3306</td></tr>
+<tr><td class="e">mysqli.default_pw</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mysqli.default_socket</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mysqli.default_user</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">mysqli.max_links</td><td class="v">Unlimited</td><td class="v">Unlimited</td></tr>
+<tr><td class="e">mysqli.max_persistent</td><td class="v">Unlimited</td><td class="v">Unlimited</td></tr>
+<tr><td class="e">mysqli.reconnect</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">mysqli.rollback_on_cached_plink</td><td class="v">Off</td><td class="v">Off</td></tr>
+</table>
+<h2><a name="module_mysqlnd">mysqlnd</a></h2>
+<table>
+<tr class="h"><th>mysqlnd</th><th>enabled</th></tr>
+<tr><td class="e">Version </td><td class="v">mysqlnd 5.0.11-dev - 20120503 - $Id: f373ea5dd5538761406a8022a4b8a374418b240e $ </td></tr>
+<tr><td class="e">Compression </td><td class="v">supported </td></tr>
+<tr><td class="e">core SSL </td><td class="v">supported </td></tr>
+<tr><td class="e">extended SSL </td><td class="v">not supported </td></tr>
+<tr><td class="e">Command buffer size </td><td class="v">4096 </td></tr>
+<tr><td class="e">Read buffer size </td><td class="v">32768 </td></tr>
+<tr><td class="e">Read timeout </td><td class="v">31536000 </td></tr>
+<tr><td class="e">Collecting statistics </td><td class="v">Yes </td></tr>
+<tr><td class="e">Collecting memory statistics </td><td class="v">No </td></tr>
+<tr><td class="e">Tracing </td><td class="v">n/a </td></tr>
+<tr><td class="e">Loaded plugins </td><td class="v">mysqlnd,debug_trace,auth_plugin_mysql_native_password,auth_plugin_mysql_clear_password </td></tr>
+<tr><td class="e">API Extensions </td><td class="v">mysql,mysqli,pdo_mysql </td></tr>
+</table>
+<table>
+<tr class="h"><th>mysqlnd statistics</th><th> </th></tr>
+<tr><td class="e">bytes_sent </td><td class="v">40686 </td></tr>
+<tr><td class="e">bytes_received </td><td class="v">155425 </td></tr>
+<tr><td class="e">packets_sent </td><td class="v">1268 </td></tr>
+<tr><td class="e">packets_received </td><td class="v">4603 </td></tr>
+<tr><td class="e">protocol_overhead_in </td><td class="v">18412 </td></tr>
+<tr><td class="e">protocol_overhead_out </td><td class="v">5072 </td></tr>
+<tr><td class="e">bytes_received_ok_packet </td><td class="v">0 </td></tr>
+<tr><td class="e">bytes_received_eof_packet </td><td class="v">0 </td></tr>
+<tr><td class="e">bytes_received_rset_header_packet </td><td class="v">2232 </td></tr>
+<tr><td class="e">bytes_received_rset_field_meta_packet </td><td class="v">0 </td></tr>
+<tr><td class="e">bytes_received_rset_row_packet </td><td class="v">2960 </td></tr>
+<tr><td class="e">bytes_received_prepare_response_packet </td><td class="v">91326 </td></tr>
+<tr><td class="e">bytes_received_change_user_packet </td><td class="v">46453 </td></tr>
+<tr><td class="e">packets_sent_command </td><td class="v">508 </td></tr>
+<tr><td class="e">packets_received_ok </td><td class="v">0 </td></tr>
+<tr><td class="e">packets_received_eof </td><td class="v">0 </td></tr>
+<tr><td class="e">packets_received_rset_header </td><td class="v">248 </td></tr>
+<tr><td class="e">packets_received_rset_field_meta </td><td class="v">0 </td></tr>
+<tr><td class="e">packets_received_rset_row </td><td class="v">382 </td></tr>
+<tr><td class="e">packets_received_prepare_response </td><td class="v">1927 </td></tr>
+<tr><td class="e">packets_received_change_user </td><td class="v">1794 </td></tr>
+<tr><td class="e">result_set_queries </td><td class="v">248 </td></tr>
+<tr><td class="e">non_result_set_queries </td><td class="v">134 </td></tr>
+<tr><td class="e">no_index_used </td><td class="v">57 </td></tr>
+<tr><td class="e">bad_index_used </td><td class="v">0 </td></tr>
+<tr><td class="e">slow_queries </td><td class="v">0 </td></tr>
+<tr><td class="e">buffered_sets </td><td class="v">248 </td></tr>
+<tr><td class="e">unbuffered_sets </td><td class="v">0 </td></tr>
+<tr><td class="e">ps_buffered_sets </td><td class="v">0 </td></tr>
+<tr><td class="e">ps_unbuffered_sets </td><td class="v">0 </td></tr>
+<tr><td class="e">flushed_normal_sets </td><td class="v">0 </td></tr>
+<tr><td class="e">flushed_ps_sets </td><td class="v">0 </td></tr>
+<tr><td class="e">ps_prepared_never_executed </td><td class="v">0 </td></tr>
+<tr><td class="e">ps_prepared_once_executed </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_fetched_from_server_normal </td><td class="v">1546 </td></tr>
+<tr><td class="e">rows_fetched_from_server_ps </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_buffered_from_client_normal </td><td class="v">1546 </td></tr>
+<tr><td class="e">rows_buffered_from_client_ps </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_fetched_from_client_normal_buffered </td><td class="v">1546 </td></tr>
+<tr><td class="e">rows_fetched_from_client_normal_unbuffered </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_fetched_from_client_ps_buffered </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_fetched_from_client_ps_unbuffered </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_fetched_from_client_ps_cursor </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_affected_normal </td><td class="v">4 </td></tr>
+<tr><td class="e">rows_affected_ps </td><td class="v">0 </td></tr>
+<tr><td class="e">rows_skipped_normal </td><td class="v">1546 </td></tr>
+<tr><td class="e">rows_skipped_ps </td><td class="v">0 </td></tr>
+<tr><td class="e">copy_on_write_saved </td><td class="v">8415 </td></tr>
+<tr><td class="e">copy_on_write_performed </td><td class="v">0 </td></tr>
+<tr><td class="e">command_buffer_too_small </td><td class="v">0 </td></tr>
+<tr><td class="e">connect_success </td><td class="v">126 </td></tr>
+<tr><td class="e">connect_failure </td><td class="v">0 </td></tr>
+<tr><td class="e">connection_reused </td><td class="v">0 </td></tr>
+<tr><td class="e">reconnect </td><td class="v">0 </td></tr>
+<tr><td class="e">pconnect_success </td><td class="v">0 </td></tr>
+<tr><td class="e">active_connections </td><td class="v">18446744073709551490 </td></tr>
+<tr><td class="e">active_persistent_connections </td><td class="v">0 </td></tr>
+<tr><td class="e">explicit_close </td><td class="v">126 </td></tr>
+<tr><td class="e">implicit_close </td><td class="v">0 </td></tr>
+<tr><td class="e">disconnect_close </td><td class="v">0 </td></tr>
+<tr><td class="e">in_middle_of_command_close </td><td class="v">0 </td></tr>
+<tr><td class="e">explicit_free_result </td><td class="v">248 </td></tr>
+<tr><td class="e">implicit_free_result </td><td class="v">0 </td></tr>
+<tr><td class="e">explicit_stmt_close </td><td class="v">0 </td></tr>
+<tr><td class="e">implicit_stmt_close </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_emalloc_count </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_emalloc_amount </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_ecalloc_count </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_ecalloc_amount </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_erealloc_count </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_erealloc_amount </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_efree_count </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_efree_amount </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_malloc_count </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_malloc_amount </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_calloc_count </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_calloc_amount </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_realloc_count </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_realloc_amount </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_free_count </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_free_amount </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_estrndup_count </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_strndup_count </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_estndup_count </td><td class="v">0 </td></tr>
+<tr><td class="e">mem_strdup_count </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_null </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_bit </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_tinyint </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_short </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_int24 </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_int </td><td class="v">1422 </td></tr>
+<tr><td class="e">proto_text_fetched_bigint </td><td class="v">246 </td></tr>
+<tr><td class="e">proto_text_fetched_decimal </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_float </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_double </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_date </td><td class="v">1422 </td></tr>
+<tr><td class="e">proto_text_fetched_year </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_time </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_datetime </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_timestamp </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_string </td><td class="v">5197 </td></tr>
+<tr><td class="e">proto_text_fetched_blob </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_enum </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_set </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_geometry </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_text_fetched_other </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_null </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_bit </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_tinyint </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_short </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_int24 </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_int </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_bigint </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_decimal </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_float </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_double </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_date </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_year </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_time </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_datetime </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_timestamp </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_string </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_blob </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_enum </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_set </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_geometry </td><td class="v">0 </td></tr>
+<tr><td class="e">proto_binary_fetched_other </td><td class="v">0 </td></tr>
+<tr><td class="e">init_command_executed_count </td><td class="v">0 </td></tr>
+<tr><td class="e">init_command_failed_count </td><td class="v">0 </td></tr>
+<tr><td class="e">com_quit </td><td class="v">126 </td></tr>
+<tr><td class="e">com_init_db </td><td class="v">0 </td></tr>
+<tr><td class="e">com_query </td><td class="v">382 </td></tr>
+<tr><td class="e">com_field_list </td><td class="v">0 </td></tr>
+<tr><td class="e">com_create_db </td><td class="v">0 </td></tr>
+<tr><td class="e">com_drop_db </td><td class="v">0 </td></tr>
+<tr><td class="e">com_refresh </td><td class="v">0 </td></tr>
+<tr><td class="e">com_shutdown </td><td class="v">0 </td></tr>
+<tr><td class="e">com_statistics </td><td class="v">0 </td></tr>
+<tr><td class="e">com_process_info </td><td class="v">0 </td></tr>
+<tr><td class="e">com_connect </td><td class="v">0 </td></tr>
+<tr><td class="e">com_process_kill </td><td class="v">0 </td></tr>
+<tr><td class="e">com_debug </td><td class="v">0 </td></tr>
+<tr><td class="e">com_ping </td><td class="v">0 </td></tr>
+<tr><td class="e">com_time </td><td class="v">0 </td></tr>
+<tr><td class="e">com_delayed_insert </td><td class="v">0 </td></tr>
+<tr><td class="e">com_change_user </td><td class="v">0 </td></tr>
+<tr><td class="e">com_binlog_dump </td><td class="v">0 </td></tr>
+<tr><td class="e">com_table_dump </td><td class="v">0 </td></tr>
+<tr><td class="e">com_connect_out </td><td class="v">0 </td></tr>
+<tr><td class="e">com_register_slave </td><td class="v">0 </td></tr>
+<tr><td class="e">com_stmt_prepare </td><td class="v">0 </td></tr>
+<tr><td class="e">com_stmt_execute </td><td class="v">0 </td></tr>
+<tr><td class="e">com_stmt_send_long_data </td><td class="v">0 </td></tr>
+<tr><td class="e">com_stmt_close </td><td class="v">0 </td></tr>
+<tr><td class="e">com_stmt_reset </td><td class="v">0 </td></tr>
+<tr><td class="e">com_stmt_set_option </td><td class="v">0 </td></tr>
+<tr><td class="e">com_stmt_fetch </td><td class="v">0 </td></tr>
+<tr><td class="e">com_deamon </td><td class="v">0 </td></tr>
+<tr><td class="e">bytes_received_real_data_normal </td><td class="v">30862 </td></tr>
+<tr><td class="e">bytes_received_real_data_ps </td><td class="v">0 </td></tr>
+</table>
+<h2><a name="module_OAuth">OAuth</a></h2>
+<table>
+<tr class="h"><th>OAuth support</th><th>enabled</th></tr>
+<tr><td class="e">PLAINTEXT support </td><td class="v">enabled </td></tr>
+<tr><td class="e">RSA-SHA1 support </td><td class="v">not supported </td></tr>
+<tr><td class="e">HMAC-SHA1 support </td><td class="v">enabled </td></tr>
+<tr><td class="e">Request engine support </td><td class="v">php_streams, curl </td></tr>
+<tr><td class="e">source version </td><td class="v">$Id: oauth.c 325799 2012-05-24 21:07:51Z jawed $ </td></tr>
+<tr><td class="e">version </td><td class="v">1.2.3 </td></tr>
+</table>
+<h2><a name="module_odbc">odbc</a></h2>
+<table>
+<tr class="h"><th>ODBC Support</th><th>enabled</th></tr>
+<tr><td class="e">Active Persistent Links </td><td class="v">0 </td></tr>
+<tr><td class="e">Active Links </td><td class="v">0 </td></tr>
+<tr><td class="e">ODBC library </td><td class="v">Win32 </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">odbc.allow_persistent</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">odbc.check_persistent</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">odbc.default_cursortype</td><td class="v">Static cursor</td><td class="v">Static cursor</td></tr>
+<tr><td class="e">odbc.default_db</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">odbc.default_pw</td><td class="v">no value</td><td class="v">no value</td></tr>
+<tr><td class="e">odbc.default_user</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">odbc.defaultbinmode</td><td class="v">return as is</td><td class="v">return as is</td></tr>
+<tr><td class="e">odbc.defaultlrl</td><td class="v">return up to 4096 bytes</td><td class="v">return up to 4096 bytes</td></tr>
+<tr><td class="e">odbc.max_links</td><td class="v">Unlimited</td><td class="v">Unlimited</td></tr>
+<tr><td class="e">odbc.max_persistent</td><td class="v">Unlimited</td><td class="v">Unlimited</td></tr>
+</table>
+<h2><a name="module_openssl">openssl</a></h2>
+<table>
+<tr><td class="e">OpenSSL support </td><td class="v">enabled </td></tr>
+<tr><td class="e">OpenSSL Library Version </td><td class="v">OpenSSL 1.0.1c 10 May 2012 </td></tr>
+<tr><td class="e">OpenSSL Header Version </td><td class="v">OpenSSL 1.0.1j-fips 15 Oct 2014 </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">openssl.cafile</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">openssl.capath</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_PC/SC">PC/SC</a></h2>
+<table>
+<tr class="h"><th>PC/SC support</th><th>enabled</th></tr>
+</table>
+<h2><a name="module_pcre">pcre</a></h2>
+<table>
+<tr><td class="e">PCRE (Perl Compatible Regular Expressions) Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">PCRE Library Version </td><td class="v">8.34 2013-12-15 </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">pcre.backtrack_limit</td><td class="v">1000000</td><td class="v">1000000</td></tr>
+<tr><td class="e">pcre.recursion_limit</td><td class="v">100000</td><td class="v">100000</td></tr>
+</table>
+<h2><a name="module_PDO">PDO</a></h2>
+<table>
+<tr class="h"><th>PDO support</th><th>enabled</th></tr>
+<tr><td class="e">PDO drivers </td><td class="v">mysql, odbc, sqlite, sqlsrv </td></tr>
+</table>
+<h2><a name="module_pdo_mysql">pdo_mysql</a></h2>
+<table>
+<tr class="h"><th>PDO Driver for MySQL</th><th>enabled</th></tr>
+<tr><td class="e">Client API version </td><td class="v">mysqlnd 5.0.11-dev - 20120503 - $Id: f373ea5dd5538761406a8022a4b8a374418b240e $ </td></tr>
+</table>
+<h2><a name="module_PDO_ODBC">PDO_ODBC</a></h2>
+<table>
+<tr class="h"><th>PDO Driver for ODBC (Win32)</th><th>enabled</th></tr>
+<tr><td class="e">ODBC Connection Pooling </td><td class="v">Enabled, strict matching </td></tr>
+</table>
+<h2><a name="module_pdo_sqlite">pdo_sqlite</a></h2>
+<table>
+<tr class="h"><th>PDO Driver for SQLite 3.x</th><th>enabled</th></tr>
+<tr><td class="e">SQLite Library </td><td class="v">3.8.4.3 </td></tr>
+</table>
+<h2><a name="module_pdo_sqlsrv">pdo_sqlsrv</a></h2>
+<table>
+<tr class="h"><th>pdo_sqlsrv support</th><th>enabled</th></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">pdo_sqlsrv.client_buffer_max_kb_size</td><td class="v">10240</td><td class="v">10240</td></tr>
+<tr><td class="e">pdo_sqlsrv.log_severity</td><td class="v">0</td><td class="v">0</td></tr>
+</table>
+<h2><a name="module_Phar">Phar</a></h2>
+<table>
+<tr class="h"><th>Phar: PHP Archive support</th><th>enabled</th></tr>
+<tr><td class="e">Phar EXT version </td><td class="v">2.0.2 </td></tr>
+<tr><td class="e">Phar API version </td><td class="v">1.1.1 </td></tr>
+<tr><td class="e">SVN revision </td><td class="v">$Id: ac6bd272c417316cc97fd46ea4f8372dcf054406 $ </td></tr>
+<tr><td class="e">Phar-based phar archives </td><td class="v">enabled </td></tr>
+<tr><td class="e">Tar-based phar archives </td><td class="v">enabled </td></tr>
+<tr><td class="e">ZIP-based phar archives </td><td class="v">enabled </td></tr>
+<tr><td class="e">gzip compression </td><td class="v">enabled </td></tr>
+<tr><td class="e">bzip2 compression </td><td class="v">enabled </td></tr>
+<tr><td class="e">Native OpenSSL support </td><td class="v">enabled </td></tr>
+</table>
+<table>
+<tr class="v"><td>
+Phar based on pear/PHP_Archive, original concept by Davey Shafik.<br />Phar fully realized by Gregory Beaver and Marcus Boerger.<br />Portions of tar implementation Copyright (c) 2003-2009 Tim Kientzle.</td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">phar.cache_list</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">phar.readonly</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">phar.require_hash</td><td class="v">On</td><td class="v">On</td></tr>
+</table>
+<h2><a name="module_pop3">pop3</a></h2>
+<table>
+<tr class="h"><th>pop3 support</th><th>enabled</th></tr>
+<tr><td class="e">Extension version </td><td class="v">1.0.3-dev - $id$ </td></tr>
+</table>
+<h2><a name="module_printer">printer</a></h2>
+<table>
+<tr class="h"><th>Printer Support</th><th>enabled</th></tr>
+<tr><td class="e">Version </td><td class="v">0.1.0-dev </td></tr>
+<tr><td class="e">Default printing device </td><td class="v">Canon MP280 series Printer </td></tr>
+<tr><td class="e">Module state </td><td class="v">working </td></tr>
+<tr><td class="e">RCS Version </td><td class="v">$Id: printer.c 331404 2013-09-15 10:51:05Z ab $ </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">printer.default_printer</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_propro">propro</a></h2>
+<table>
+<tr class="h"><th>Property proxy support</th><th>enabled</th></tr>
+<tr><td class="e">Extension version </td><td class="v">1.0.1 </td></tr>
+</table>
+<h2><a name="module_radius">radius</a></h2>
+<table>
+<tr class="h"><th>radius support</th><th>enabled</th></tr>
+<tr><td class="e">version </td><td class="v">1.3.0b1 </td></tr>
+</table>
+<h2><a name="module_raphf">raphf</a></h2>
+<table>
+<tr class="h"><th>Resource and persistent handle factory support</th><th>enabled</th></tr>
+<tr><td class="e">Extension version </td><td class="v">1.0.4 </td></tr>
+</table>
+<table>
+<tr class="h"><th colspan="4">Persistent handles in this thread</th></tr>
+<tr class="h"><th>Provider</th><th>Ident</th><th>Used</th><th>Free</th></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">raphf.persistent_handle.limit</td><td class="v">-1</td><td class="v">-1</td></tr>
+</table>
+<h2><a name="module_rar">rar</a></h2>
+<table>
+<tr class="h"><th>RAR support</th><th>enabled</th></tr>
+<tr><td class="e">RAR EXT version </td><td class="v">3.0.0 </td></tr>
+<tr><td class="e">Revision </td><td class="v">$Revision: 312082 $ </td></tr>
+<tr><td class="e">UnRAR version </td><td class="v">4.10 beta1 patch1 2011-11-02 </td></tr>
+<tr><td class="e">UnRAR API version </td><td class="v">5 extension 1 </td></tr>
+</table>
+<h2><a name="module_redis">redis</a></h2>
+<table>
+<tr class="h"><th>Redis Support</th><th>enabled</th></tr>
+<tr><td class="e">Redis Version </td><td class="v">2.2.5 </td></tr>
+</table>
+<h2><a name="module_Reflection">Reflection</a></h2>
+<table>
+<tr class="h"><th>Reflection</th><th>enabled</th></tr>
+<tr><td class="e">Version </td><td class="v">$Id: b2a30058688ac580cb2883c4283c19fd0e00d535 $ </td></tr>
+</table>
+<h2><a name="module_rsync">rsync</a></h2>
+<table>
+<tr class="h"><th>rsync support</th><th>enabled</th></tr>
+<tr><td class="e">Version </td><td class="v">0.1.0 </td></tr>
+<tr><td class="e">Librsync Version </td><td class="v">librsync 0.9.8pre </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">rsync.block_length</td><td class="v">2048</td><td class="v">2048</td></tr>
+<tr><td class="e">rsync.log_stats</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">rsync.strong_length</td><td class="v">8</td><td class="v">8</td></tr>
+</table>
+<h2><a name="module_session">session</a></h2>
+<table>
+<tr><td class="e">Session Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">Registered save handlers </td><td class="v">files user redis memcache  </td></tr>
+<tr><td class="e">Registered serializer handlers </td><td class="v">php_serialize php php_binary wddx igbinary msgpack  </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">session.auto_start</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">session.cache_expire</td><td class="v">180</td><td class="v">180</td></tr>
+<tr><td class="e">session.cache_limiter</td><td class="v">nocache</td><td class="v">nocache</td></tr>
+<tr><td class="e">session.cookie_domain</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">session.cookie_httponly</td><td class="v">On</td><td class="v">Off</td></tr>
+<tr><td class="e">session.cookie_lifetime</td><td class="v">1209600</td><td class="v">0</td></tr>
+<tr><td class="e">session.cookie_path</td><td class="v">/</td><td class="v">/</td></tr>
+<tr><td class="e">session.cookie_secure</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">session.entropy_file</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">session.entropy_length</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">session.gc_divisor</td><td class="v">1000</td><td class="v">1000</td></tr>
+<tr><td class="e">session.gc_maxlifetime</td><td class="v">1209600</td><td class="v">1440</td></tr>
+<tr><td class="e">session.gc_probability</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">session.hash_bits_per_character</td><td class="v">5</td><td class="v">5</td></tr>
+<tr><td class="e">session.hash_function</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">session.name</td><td class="v">PHPSESSID</td><td class="v">PHPSESSID</td></tr>
+<tr><td class="e">session.referer_check</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">session.save_handler</td><td class="v">files</td><td class="v">files</td></tr>
+<tr><td class="e">session.save_path</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">session.serialize_handler</td><td class="v">php</td><td class="v">php</td></tr>
+<tr><td class="e">session.upload_progress.cleanup</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">session.upload_progress.enabled</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">session.upload_progress.freq</td><td class="v">1%</td><td class="v">1%</td></tr>
+<tr><td class="e">session.upload_progress.min_freq</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">session.upload_progress.name</td><td class="v">PHP_SESSION_UPLOAD_PROGRESS</td><td class="v">PHP_SESSION_UPLOAD_PROGRESS</td></tr>
+<tr><td class="e">session.upload_progress.prefix</td><td class="v">upload_progress_</td><td class="v">upload_progress_</td></tr>
+<tr><td class="e">session.use_cookies</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">session.use_only_cookies</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">session.use_strict_mode</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">session.use_trans_sid</td><td class="v">0</td><td class="v">0</td></tr>
+</table>
+<h2><a name="module_shmop">shmop</a></h2>
+<table>
+<tr><td class="e">shmop support </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_SimpleXML">SimpleXML</a></h2>
+<table>
+<tr class="h"><th>Simplexml support</th><th>enabled</th></tr>
+<tr><td class="e">Revision </td><td class="v">$Id: a915862ec47f9589309acc4996ca8f6179788746 $ </td></tr>
+<tr><td class="e">Schema support </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_smtp">smtp</a></h2>
+<table>
+<tr class="h"><th>SMTP Support</th><th>Enabled</th></tr>
+<tr><td class="e">Version </td><td class="v">0.2.0-dev </td></tr>
+</table>
+<h2><a name="module_snmp">snmp</a></h2>
+<table>
+<tr><td class="e">NET-SNMP Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">NET-SNMP Version </td><td class="v">5.7.2.1 </td></tr>
+<tr><td class="e">PHP SNMP Version </td><td class="v">0.1 </td></tr>
+</table>
+<h2><a name="module_soap">soap</a></h2>
+<table>
+<tr><td class="e">Soap Client </td><td class="v">enabled </td></tr>
+<tr><td class="e">Soap Server </td><td class="v">enabled </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">soap.wsdl_cache</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">soap.wsdl_cache_dir</td><td class="v">/tmp</td><td class="v">/tmp</td></tr>
+<tr><td class="e">soap.wsdl_cache_enabled</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">soap.wsdl_cache_limit</td><td class="v">5</td><td class="v">5</td></tr>
+<tr><td class="e">soap.wsdl_cache_ttl</td><td class="v">86400</td><td class="v">86400</td></tr>
+</table>
+<h2><a name="module_sockets">sockets</a></h2>
+<table>
+<tr><td class="e">Sockets Support </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_solr">solr</a></h2>
+<table>
+<tr class="h"><th>Solr Extension Version</th><th>2.0.0</th></tr>
+<tr><td class="e">Solr Extension Revision Id </td><td class="v">$Revision$ </td></tr>
+<tr><td class="e">Last Build Date </td><td class="v">Jan  3 2015 </td></tr>
+<tr><td class="e">Last Build Time </td><td class="v">21:10:20 </td></tr>
+<tr><td class="e">SolrObject </td><td class="v">enabled </td></tr>
+<tr><td class="e">SolrDocument </td><td class="v">enabled </td></tr>
+<tr><td class="e">SolrDocumentField </td><td class="v">enabled </td></tr>
+<tr><td class="e">SolrInputDocument </td><td class="v">enabled </td></tr>
+<tr><td class="e">SolrClient </td><td class="v">enabled </td></tr>
+<tr><td class="e">SolrParams </td><td class="v">enabled </td></tr>
+<tr><td class="e">SolrQuery </td><td class="v">enabled </td></tr>
+<tr><td class="e">SolrModifiableParams </td><td class="v">enabled </td></tr>
+<tr><td class="e">SolrResponse </td><td class="v">enabled </td></tr>
+<tr><td class="e">SolrQueryResponse </td><td class="v">enabled </td></tr>
+<tr><td class="e">SolrUpdateResponse </td><td class="v">enabled </td></tr>
+<tr><td class="e">SolrPingResponse </td><td class="v">enabled </td></tr>
+<tr><td class="e">SolrGenericResponse </td><td class="v">enabled </td></tr>
+<tr><td class="e">SolrUtils </td><td class="v">enabled </td></tr>
+<tr><td class="e">SolrException </td><td class="v">enabled </td></tr>
+<tr><td class="e">SolrIllegalOperationException </td><td class="v">enabled </td></tr>
+<tr><td class="e">SolrIllegalArgumentException </td><td class="v">enabled </td></tr>
+<tr><td class="e">SolrClientException </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_SPL">SPL</a></h2>
+<table>
+<tr class="h"><th>SPL support</th><th>enabled</th></tr>
+<tr><td class="e">Interfaces </td><td class="v">Countable, OuterIterator, RecursiveIterator, SeekableIterator, SplObserver, SplSubject </td></tr>
+<tr><td class="e">Classes </td><td class="v">AppendIterator, ArrayIterator, ArrayObject, BadFunctionCallException, BadMethodCallException, CachingIterator, CallbackFilterIterator, DirectoryIterator, DomainException, EmptyIterator, FilesystemIterator, FilterIterator, GlobIterator, InfiniteIterator, InvalidArgumentException, IteratorIterator, LengthException, LimitIterator, LogicException, MultipleIterator, NoRewindIterator, OutOfBoundsException, OutOfRangeException, OverflowException, ParentIterator, RangeException, RecursiveArrayIterator, RecursiveCachingIterator, RecursiveCallbackFilterIterator, RecursiveDirectoryIterator, RecursiveFilterIterator, RecursiveIteratorIterator, RecursiveRegexIterator, RecursiveTreeIterator, RegexIterator, RuntimeException, SplDoublyLinkedList, SplFileInfo, SplFileObject, SplFixedArray, SplHeap, SplMinHeap, SplMaxHeap, SplObjectStorage, SplPriorityQueue, SplQueue, SplStack, SplTempFileObject, UnderflowException, UnexpectedValueException </td></tr>
+</table>
+<h2><a name="module_sqlite3">sqlite3</a></h2>
+<table>
+<tr class="h"><th>SQLite3 support</th><th>enabled</th></tr>
+<tr><td class="e">SQLite3 module version </td><td class="v">0.7-dev </td></tr>
+<tr><td class="e">SQLite Library </td><td class="v">3.8.4.3 </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">sqlite3.extension_dir</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_sqlsrv">sqlsrv</a></h2>
+<table>
+<tr class="h"><th>sqlsrv support</th><th>enabled</th></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">sqlsrv.ClientBufferMaxKBSize</td><td class="v">10240</td><td class="v">10240</td></tr>
+<tr><td class="e">sqlsrv.LogSeverity</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">sqlsrv.LogSubsystems</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">sqlsrv.WarningsReturnAsErrors</td><td class="v">On</td><td class="v">On</td></tr>
+</table>
+<h2><a name="module_ssh2">ssh2</a></h2>
+<table>
+<tr class="h"><th>SSH2 support</th><th>enabled</th></tr>
+<tr><td class="e">extension version </td><td class="v">0.12 </td></tr>
+<tr><td class="e">libssh2 version </td><td class="v">1.4.3 </td></tr>
+<tr><td class="e">banner </td><td class="v">SSH-2.0-libssh2_1.4.3 </td></tr>
+</table>
+<h2><a name="module_standard">standard</a></h2>
+<table>
+<tr><td class="e">Dynamic Library Support </td><td class="v">enabled </td></tr>
+<tr><td class="e">Internal Sendmail Support for Windows </td><td class="v">enabled </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">assert.active</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">assert.bail</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">assert.callback</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">assert.quiet_eval</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">assert.warning</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">auto_detect_line_endings</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">default_socket_timeout</td><td class="v">60</td><td class="v">60</td></tr>
+<tr><td class="e">from</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">url_rewriter.tags</td><td class="v">a=href,area=href,frame=src,input=src,form=fakeentry</td><td class="v">a=href,area=href,frame=src,input=src,form=fakeentry</td></tr>
+<tr><td class="e">user_agent</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_stats">stats</a></h2>
+<table>
+<tr class="h"><th>Statistics Support</th><th>enabled</th></tr>
+<tr><td class="e">Version </td><td class="v">1.0.3-dev </td></tr>
+</table>
+<h2><a name="module_Stomp">Stomp</a></h2>
+<table>
+<tr class="h"><th>Stomp</th><th>enabled</th></tr>
+<tr><td class="e">API version </td><td class="v">1.0.6-dev </td></tr>
+<tr><td class="e">SSL Support </td><td class="v">enabled </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">stomp.default_broker</td><td class="v">tcp://localhost:61613</td><td class="v">tcp://localhost:61613</td></tr>
+<tr><td class="e">stomp.default_connection_timeout_sec</td><td class="v">2</td><td class="v">2</td></tr>
+<tr><td class="e">stomp.default_connection_timeout_usec</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">stomp.default_password</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">stomp.default_read_timeout_sec</td><td class="v">2</td><td class="v">2</td></tr>
+<tr><td class="e">stomp.default_read_timeout_usec</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">stomp.default_username</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_sync">sync</a></h2>
+<table>
+<tr class="h"><th>sync support</th><th>enabled</th></tr>
+</table>
+<h2><a name="module_tidy">tidy</a></h2>
+<table>
+<tr class="h"><th>Tidy support</th><th>enabled</th></tr>
+<tr><td class="e">libTidy Release </td><td class="v">25 March 2009 </td></tr>
+<tr><td class="e">Extension Version </td><td class="v">2.0 ($Id: 14aff36094bdd63f1d0adee006215e5e553294ea $) </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">tidy.clean_output</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">tidy.default_config</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2><a name="module_timezonedb">timezonedb</a></h2>
+<table>
+<tr><td class="e">Alternative Timezone Database </td><td class="v">enabled </td></tr>
+<tr><td class="e">Timezone Database Version </td><td class="v">2014.10 </td></tr>
+</table>
+<h2><a name="module_tokenizer">tokenizer</a></h2>
+<table>
+<tr><td class="e">Tokenizer Support </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_translit">translit</a></h2>
+<table>
+<tr class="h"><th>Transliteration support</th><th>enabled</th></tr>
+<tr><td class="e">Version </td><td class="v">0.6.0 </td></tr>
+</table>
+<h2><a name="module_uploadprogress">uploadprogress</a></h2>
+<table>
+<tr class="h"><th>uploadprogress support</th><th>enabled</th></tr>
+<tr><td class="e">Version </td><td class="v">1.0.3.1 </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">uploadprogress.file.contents_template</td><td class="v">\/upload_contents_%s</td><td class="v">\/upload_contents_%s</td></tr>
+<tr><td class="e">uploadprogress.file.filename_template</td><td class="v">\/upt_%s.txt</td><td class="v">\/upt_%s.txt</td></tr>
+<tr><td class="e">uploadprogress.get_contents</td><td class="v">0</td><td class="v">0</td></tr>
+</table>
+<h2><a name="module_uprofiler">uprofiler</a></h2>
+<table>
+<tr><td class="e">uprofiler </td><td class="v">enabled </td></tr>
+<tr class="h"><th>uprofiler</th><th>0.11.0</th></tr>
+<tr><td class="e">CPU num </td><td class="v">1 </td></tr>
+<tr><td class="e">process bound to CPU </td><td class="v">0 </td></tr>
+<tr class="h"><th>CPU logical id</th><th> Clock Rate (MHz) </th></tr>
+<tr><td class="e"> CPU 0  </td><td class="v">INF </td></tr>
+</table>
+<h2><a name="module_varnish">varnish</a></h2>
+<table>
+<tr class="h"><th>varnish support</th><th>enabled</th></tr>
+<tr><td class="e">Version </td><td class="v">1.2.0 </td></tr>
+<tr><td class="e">Revision </td><td class="v">$Id: varnish.c 333458 2014-05-01 17:04:55Z ab $ </td></tr>
+</table>
+<h2><a name="module_wddx">wddx</a></h2>
+<table>
+<tr class="h"><th>WDDX Support</th><th>enabled</th></tr>
+<tr><td class="e">WDDX Session Serializer </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_wfio">wfio</a></h2>
+<table>
+<tr class="h"><th>wfio support</th><th>enabled</th></tr>
+</table>
+<h2><a name="module_win32ps">win32ps</a></h2>
+<table>
+<tr class="h"><th>Win32 Process Status Support</th><th>enabled</th></tr>
+<tr><td class="e">Extension Version </td><td class="v">1.0.2-dev </td></tr>
+</table>
+<h2><a name="module_XCache">XCache</a></h2>
+<table>
+<tr><td class="e">XCache Version </td><td class="v">3.2.0 </td></tr>
+<tr><td class="e">Modules Built </td><td class="v">cacher optimizer coverager assembler disassembler encoder decoder </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">xcache.coredump_directory</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">xcache.coredump_type</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">xcache.disable_on_crash</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">xcache.experimental</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">xcache.test</td><td class="v">Off</td><td class="v">Off</td></tr>
+</table>
+<h2><a name="module_XCache Cacher">XCache Cacher</a></h2>
+<table>
+<tr><td class="e">XCache Cacher Module </td><td class="v">enabled </td></tr>
+<tr><td class="e">Readonly Protection </td><td class="v">disabled </td></tr>
+<tr><td class="e">Page Request Time </td><td class="v">2019-11-08 04:53:36 </td></tr>
+<tr><td class="e">Cache Init Time </td><td class="v">2019-11-07 20:39:22 </td></tr>
+<tr><td class="e">Cache Instance Id </td><td class="v">2636.2040 </td></tr>
+<tr><td class="e">Opcode Cache </td><td class="v">enabled, 62,914,560 bytes, 1 split(s), with 8192 slots each </td></tr>
+<tr><td class="e">Variable Cache </td><td class="v">enabled, 4,194,304 bytes, 1 split(s), with 8192 slots each </td></tr>
+<tr><td class="e">Shared Memory Schemes </td><td class="v">malloc, mmap </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">xcache.admin.enable_auth</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">xcache.allocator</td><td class="v">bestfit</td><td class="v">bestfit</td></tr>
+<tr><td class="e">xcache.cacher</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">xcache.count</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">xcache.gc_interval</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">xcache.mmap_path</td><td class="v">/temp</td><td class="v">/temp</td></tr>
+<tr><td class="e">xcache.readonly_protection</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">xcache.shm_scheme</td><td class="v">mmap</td><td class="v">mmap</td></tr>
+<tr><td class="e">xcache.size</td><td class="v">60M</td><td class="v">60M</td></tr>
+<tr><td class="e">xcache.slots</td><td class="v">8K</td><td class="v">8K</td></tr>
+<tr><td class="e">xcache.stat</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">xcache.ttl</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">xcache.var_allocator</td><td class="v">bestfit</td><td class="v">bestfit</td></tr>
+<tr><td class="e">xcache.var_count</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">xcache.var_gc_interval</td><td class="v">300</td><td class="v">300</td></tr>
+<tr><td class="e">xcache.var_maxttl</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">xcache.var_namespace</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">xcache.var_namespace_mode</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">xcache.var_size</td><td class="v">4M</td><td class="v">4M</td></tr>
+<tr><td class="e">xcache.var_slots</td><td class="v">8K</td><td class="v">8K</td></tr>
+<tr><td class="e">xcache.var_ttl</td><td class="v">0</td><td class="v">0</td></tr>
+</table>
+<h2><a name="module_XCache Coverager">XCache Coverager</a></h2>
+<table>
+<tr><td class="e">XCache Coverager Module </td><td class="v">enabled </td></tr>
+<tr><td class="e">Coverage Started </td><td class="v">Off </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">xcache.coveragedump_directory</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">xcache.coverager</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">xcache.coverager_autostart</td><td class="v">On</td><td class="v">On</td></tr>
+</table>
+<h2><a name="module_XCache Disassembler">XCache Disassembler</a></h2>
+<table>
+<tr><td class="e">XCache Disassembler Module </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_XCache Optimizer">XCache Optimizer</a></h2>
+<table>
+<tr><td class="e">XCache Optimizer Module </td><td class="v">enabled </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">xcache.optimizer</td><td class="v">Off</td><td class="v">Off</td></tr>
+</table>
+<h2><a name="module_xdebug">xdebug</a></h2>
+<table>
+<tr class="h"><th>xdebug support</th><th>enabled</th></tr>
+<tr><td class="e">Version </td><td class="v">2.2.6 </td></tr>
+<tr><td class="e">IDE Key </td><td class="v">uzivatel </td></tr>
+</table>
+<table>
+<tr class="h"><th>Supported protocols</th><th>Revision</th></tr>
+<tr><td class="e">DBGp - Common DeBuGger Protocol </td><td class="v">$Revision: 1.145 $ </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">xdebug.auto_trace</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">xdebug.cli_color</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">xdebug.collect_assignments</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">xdebug.collect_includes</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">xdebug.collect_params</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">xdebug.collect_return</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">xdebug.collect_vars</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">xdebug.coverage_enable</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">xdebug.default_enable</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">xdebug.dump.COOKIE</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">xdebug.dump.ENV</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">xdebug.dump.FILES</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">xdebug.dump.GET</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">xdebug.dump.POST</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">xdebug.dump.REQUEST</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">xdebug.dump.SERVER</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">xdebug.dump.SESSION</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">xdebug.dump_globals</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">xdebug.dump_once</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">xdebug.dump_undefined</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">xdebug.extended_info</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">xdebug.file_link_format</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">xdebug.idekey</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">xdebug.max_nesting_level</td><td class="v">100</td><td class="v">100</td></tr>
+<tr><td class="e">xdebug.overload_var_dump</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">xdebug.profiler_aggregate</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">xdebug.profiler_append</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">xdebug.profiler_enable</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">xdebug.profiler_enable_trigger</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">xdebug.profiler_output_dir</td><td class="v">\</td><td class="v">\</td></tr>
+<tr><td class="e">xdebug.profiler_output_name</td><td class="v">cachegrind.out.%p</td><td class="v">cachegrind.out.%p</td></tr>
+<tr><td class="e">xdebug.remote_autostart</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">xdebug.remote_connect_back</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">xdebug.remote_cookie_expire_time</td><td class="v">3600</td><td class="v">3600</td></tr>
+<tr><td class="e">xdebug.remote_enable</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">xdebug.remote_handler</td><td class="v">dbgp</td><td class="v">dbgp</td></tr>
+<tr><td class="e">xdebug.remote_host</td><td class="v">localhost</td><td class="v">localhost</td></tr>
+<tr><td class="e">xdebug.remote_log</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">xdebug.remote_mode</td><td class="v">req</td><td class="v">req</td></tr>
+<tr><td class="e">xdebug.remote_port</td><td class="v">9000</td><td class="v">9000</td></tr>
+<tr><td class="e">xdebug.scream</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">xdebug.show_exception_trace</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">xdebug.show_local_vars</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">xdebug.show_mem_delta</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">xdebug.trace_enable_trigger</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">xdebug.trace_format</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">xdebug.trace_options</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">xdebug.trace_output_dir</td><td class="v">\</td><td class="v">\</td></tr>
+<tr><td class="e">xdebug.trace_output_name</td><td class="v">trace.%c</td><td class="v">trace.%c</td></tr>
+<tr><td class="e">xdebug.var_display_max_children</td><td class="v">128</td><td class="v">128</td></tr>
+<tr><td class="e">xdebug.var_display_max_data</td><td class="v">512</td><td class="v">512</td></tr>
+<tr><td class="e">xdebug.var_display_max_depth</td><td class="v">3</td><td class="v">3</td></tr>
+</table>
+<h2><a name="module_xml">xml</a></h2>
+<table>
+<tr><td class="e">XML Support </td><td class="v">active </td></tr>
+<tr><td class="e">XML Namespace Support </td><td class="v">active </td></tr>
+<tr><td class="e">libxml2 Version </td><td class="v">2.9.1 </td></tr>
+</table>
+<h2><a name="module_xmldiff">xmldiff</a></h2>
+<table>
+<tr class="h"><th>xmldiff support</th><th>enabled</th></tr>
+<tr class="h"><th>xmldiff version</th><th>0.9.2</th></tr>
+<tr class="h"><th>diffmark library</th><th>0.10 bundled</th></tr>
+<tr><td class="e">Revision </td><td class="v">$Id: xmldiff.cpp 332040 2013-11-01 06:30:12Z remi $ </td></tr>
+</table>
+<h2><a name="module_xmlreader">xmlreader</a></h2>
+<table>
+<tr><td class="e">XMLReader </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_xmlrpc">xmlrpc</a></h2>
+<table>
+<tr><td class="e">core library version </td><td class="v">xmlrpc-epi v. 0.51 </td></tr>
+<tr><td class="e">php extension version </td><td class="v">0.51 </td></tr>
+<tr><td class="e">author </td><td class="v">Dan Libby </td></tr>
+<tr><td class="e">homepage </td><td class="v">http://xmlrpc-epi.sourceforge.net </td></tr>
+<tr><td class="e">open sourced by </td><td class="v">Epinions.com </td></tr>
+</table>
+<h2><a name="module_xmlwriter">xmlwriter</a></h2>
+<table>
+<tr><td class="e">XMLWriter </td><td class="v">enabled </td></tr>
+</table>
+<h2><a name="module_xsl">xsl</a></h2>
+<table>
+<tr><td class="e">XSL </td><td class="v">enabled </td></tr>
+<tr><td class="e">libxslt Version </td><td class="v">1.1.28 </td></tr>
+<tr><td class="e">libxslt compiled against libxml Version </td><td class="v">2.8.0 </td></tr>
+<tr><td class="e">EXSLT </td><td class="v">enabled </td></tr>
+<tr><td class="e">libexslt Version </td><td class="v">0.8.16 </td></tr>
+</table>
+<h2><a name="module_xslcache">xslcache</a></h2>
+<table>
+<tr><td class="e">XSLCACHE </td><td class="v">enabled </td></tr>
+<tr><td class="e">libxslt Version </td><td class="v">1.1.28 </td></tr>
+<tr><td class="e">libxslt compiled against libxml Version </td><td class="v">2.8.0 </td></tr>
+<tr><td class="e">EXSLT </td><td class="v">enabled </td></tr>
+<tr><td class="e">libexslt Version </td><td class="v">0.8.16 </td></tr>
+</table>
+<h2><a name="module_Zend OPcache">Zend OPcache</a></h2>
+<table>
+<tr><td class="e">Opcode Caching </td><td class="v">Up and Running </td></tr>
+<tr><td class="e">Optimization </td><td class="v">Enabled </td></tr>
+<tr><td class="e">Startup </td><td class="v">OK </td></tr>
+<tr><td class="e">Shared memory model </td><td class="v">win32 </td></tr>
+<tr><td class="e">Cache hits </td><td class="v">17 </td></tr>
+<tr><td class="e">Cache misses </td><td class="v">355 </td></tr>
+<tr><td class="e">Used memory </td><td class="v">6069784 </td></tr>
+<tr><td class="e">Free memory </td><td class="v">127017448 </td></tr>
+<tr><td class="e">Wasted memory </td><td class="v">1130496 </td></tr>
+<tr><td class="e">Cached scripts </td><td class="v">257 </td></tr>
+<tr><td class="e">Cached keys </td><td class="v">499 </td></tr>
+<tr><td class="e">Max keys </td><td class="v">7963 </td></tr>
+<tr><td class="e">OOM restarts </td><td class="v">0 </td></tr>
+<tr><td class="e">Hash keys restarts </td><td class="v">0 </td></tr>
+<tr><td class="e">Manual restarts </td><td class="v">0 </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">opcache.blacklist_filename</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">opcache.consistency_checks</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">opcache.dups_fix</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">opcache.enable</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">opcache.enable_cli</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">opcache.enable_file_override</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">opcache.error_log</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">opcache.fast_shutdown</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">opcache.file_update_protection</td><td class="v">2</td><td class="v">2</td></tr>
+<tr><td class="e">opcache.force_restart_timeout</td><td class="v">180</td><td class="v">180</td></tr>
+<tr><td class="e">opcache.inherited_hack</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">opcache.interned_strings_buffer</td><td class="v">8</td><td class="v">8</td></tr>
+<tr><td class="e">opcache.load_comments</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">opcache.log_verbosity_level</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">opcache.max_accelerated_files</td><td class="v">4000</td><td class="v">4000</td></tr>
+<tr><td class="e">opcache.max_file_size</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">opcache.max_wasted_percentage</td><td class="v">5</td><td class="v">5</td></tr>
+<tr><td class="e">opcache.memory_consumption</td><td class="v">128</td><td class="v">128</td></tr>
+<tr><td class="e">opcache.mmap_base</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">opcache.optimization_level</td><td class="v">0xFFFFFFFF</td><td class="v">0xFFFFFFFF</td></tr>
+<tr><td class="e">opcache.preferred_memory_model</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">opcache.protect_memory</td><td class="v">0</td><td class="v">0</td></tr>
+<tr><td class="e">opcache.restrict_api</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+<tr><td class="e">opcache.revalidate_freq</td><td class="v">60</td><td class="v">60</td></tr>
+<tr><td class="e">opcache.revalidate_path</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">opcache.save_comments</td><td class="v">1</td><td class="v">1</td></tr>
+<tr><td class="e">opcache.use_cwd</td><td class="v">On</td><td class="v">On</td></tr>
+<tr><td class="e">opcache.validate_timestamps</td><td class="v">On</td><td class="v">On</td></tr>
+</table>
+<h2><a name="module_zip">zip</a></h2>
+<table>
+<tr><td class="e">Zip </td><td class="v">enabled </td></tr>
+<tr><td class="e">Extension Version </td><td class="v">$Id: a9a55a8aeff3110d7c004145748c9adbf990eec3 $ </td></tr>
+<tr><td class="e">Zip version </td><td class="v">1.12.4 </td></tr>
+<tr><td class="e">Libzip version </td><td class="v">0.11.2 </td></tr>
+</table>
+<h2><a name="module_zlib">zlib</a></h2>
+<table>
+<tr class="h"><th>ZLib Support</th><th>enabled</th></tr>
+<tr><td class="e">Stream Wrapper </td><td class="v">compress.zlib:// </td></tr>
+<tr><td class="e">Stream Filter </td><td class="v">zlib.inflate, zlib.deflate </td></tr>
+<tr><td class="e">Compiled Version </td><td class="v">1.2.8 </td></tr>
+<tr><td class="e">Linked Version </td><td class="v">1.2.8 </td></tr>
+</table>
+<table>
+<tr class="h"><th>Directive</th><th>Local Value</th><th>Master Value</th></tr>
+<tr><td class="e">zlib.output_compression</td><td class="v">Off</td><td class="v">Off</td></tr>
+<tr><td class="e">zlib.output_compression_level</td><td class="v">-1</td><td class="v">-1</td></tr>
+<tr><td class="e">zlib.output_handler</td><td class="v"><i>no value</i></td><td class="v"><i>no value</i></td></tr>
+</table>
+<h2>Additional Modules</h2>
+<table>
+<tr class="h"><th>Module Name</th></tr>
+</table>
+</div>			</div>
+		</div></div>
+
+
+		<div class="panel">
+		<h2><a data-tracy-ref="^+" class="tracy-toggle tracy-collapsed">HTTP request</a></h2>
+
+		<div class="tracy-collapsed inner">
+						<h3>Headers</h3>
+			<div class="outer">
+			<table>
+			<tr><th>Host</th><td>localhost</td></tr>
+<tr><th>Connection</th><td>keep-alive</td></tr>
+<tr><th>Cache-Control</th><td>max-age=0</td></tr>
+<tr><th>Accept</th><td>text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</td></tr>
+<tr><th>Upgrade-Insecure-Requests</th><td>1</td></tr>
+<tr><th>User-Agent</th><td>Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36</td></tr>
+<tr><th>Accept-Encoding</th><td>gzip, deflate, sdch</td></tr>
+<tr><th>Accept-Language</th><td>cs-CZ,cs;q=0.8</td></tr>
+<tr><th>Cookie</th><td>SL_GWPT_Show_Hide_tmp=undefined; PHPSESSID=f97namdoet55qa9s071t9mcb25; SL_G_WPT_TO=cs; SL_wptGlobTipTmp=undefined</td></tr>
+			</table>
+			</div>
+			
+
+						<h3>$_GET</h3>
+						<p><i>empty</i></p>
+									<h3>$_POST</h3>
+						<p><i>empty</i></p>
+									<h3>$_COOKIE</h3>
+						<div class="outer">
+			<table>
+			<tr><th>SL_GWPT_Show_Hide_tmp</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"undefined"</span> (9)
+</pre>
+</td></tr>
+<tr><th>PHPSESSID</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"f97namdoet55qa9s071t9mcb25"</span> (26)
+</pre>
+</td></tr>
+<tr><th>SL_G_WPT_TO</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"cs"</span> (2)
+</pre>
+</td></tr>
+<tr><th>SL_wptGlobTipTmp</th><td><pre class="tracy-dump"><span class="tracy-dump-string">"undefined"</span> (9)
+</pre>
+</td></tr>
+			</table>
+			</div>
+								</div></div>
+
+
+		<div class="panel">
+		<h2><a data-tracy-ref="^+" class="tracy-toggle tracy-collapsed">HTTP response</a></h2>
+
+		<div class="tracy-collapsed inner">
+			<h3>Headers</h3>
+						<pre>X-Powered-By: Nette Framework<br>Content-Type: text/html; charset=utf-8<br>X-Frame-Options: SAMEORIGIN<br>Expires: Thu, 19 Nov 1981 08:52:00 GMT<br>Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0<br>Pragma: no-cache<br>Set-Cookie: PHPSESSID=f97namdoet55qa9s071t9mcb25; expires=Fri, 22-Nov-2019 03:53:42 GMT; Max-Age=1209600; path=/; httponly<br></pre>
+					</div></div>
+
+
+		
+
+		<ul>
+			<li>Report generated at 2019/11/08 04:53:43</li>
+			<li><a href="http://localhost/Records_nette/seznam-clanku">http://localhost/Records_nette/seznam-clanku</a></li>
+			<li>PHP 5.6.4</li><li>Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.6.4</li><li>Tracy 2.5.1</li>		</ul>
+
+		<div id="tracy-bs-logo"><a href="https://tracy.nette.org" rel="noreferrer"></a></div>
+	</div>
+</div>
+
+<script>
+(function() {
+	if (!document.documentElement.dataset) {
+		document.getElementById('tracy-bs-error').innerHTML += '<div id=tracy-bs-ie-warning>Warning: Tracy requires IE 11+<\/div>';
+		return;
+	}
+	/**
+ * This file is part of the Tracy (https://tracy.nette.org)
+ */
+
+(function() {
+
+	// enables <a class="tracy-toggle" href="#"> or <span data-tracy-ref="#"> toggling
+	class Toggle
+	{
+		static init() {
+			document.documentElement.addEventListener('click', function(e) {
+				var el = e.target.closest('.tracy-toggle');
+				if (el && !e.shiftKey && !e.altKey && !e.ctrlKey && !e.metaKey) {
+					Toggle.toggle(el);
+				}
+			});
+			Toggle.init = function() {};
+		}
+
+
+		// changes element visibility
+		static toggle(el, show) {
+			var collapsed = el.classList.contains('tracy-collapsed'),
+				ref = el.getAttribute('data-tracy-ref') || el.getAttribute('href', 2),
+				dest = el;
+
+			if (typeof show === 'undefined') {
+				show = collapsed;
+			} else if (!show === collapsed) {
+				return;
+			}
+
+			if (!ref || ref === '#') {
+				ref = '+';
+			} else if (ref.substr(0, 1) === '#') {
+				dest = document;
+			}
+			ref = ref.match(/(\^\s*([^+\s]*)\s*)?(\+\s*(\S*)\s*)?(.*)/);
+			dest = ref[1] ? dest.parentNode : dest;
+			dest = ref[2] ? dest.closest(ref[2]) : dest;
+			dest = ref[3] ? Toggle.nextElement(dest.nextElementSibling, ref[4]) : dest;
+			dest = ref[5] ? dest.querySelector(ref[5]) : dest;
+
+			el.classList.toggle('tracy-collapsed', !show);
+			dest.classList.toggle('tracy-collapsed', !show);
+
+			if (typeof window.Event === 'function') {
+				var toggleEvent = new Event('tracy-toggle', {bubbles: true});
+			} else {
+				toggleEvent = document.createEvent('Event');
+				toggleEvent.initEvent('tracy-toggle', true, false);
+			}
+			el.dispatchEvent(toggleEvent);
+		}
+
+
+		// save & restore toggles
+		static persist(baseEl, restore) {
+			var saved = [];
+			baseEl.addEventListener('tracy-toggle', function(e) {
+				if (saved.indexOf(e.target) < 0) {
+					saved.push(e.target);
+				}
+			});
+
+			var toggles = JSON.parse(sessionStorage.getItem('tracy-toggles-' + baseEl.id));
+			if (toggles && restore !== false) {
+				toggles.forEach(function(item) {
+					var el = baseEl;
+					for (var i in item.path) {
+						if (!(el = el.children[item.path[i]])) {
+							return;
+						}
+					}
+					if (el.textContent === item.text) {
+						Toggle.toggle(el, item.show);
+					}
+				});
+			}
+
+			window.addEventListener('unload', function() {
+				toggles = [].map.call(saved, function(el) {
+					var item = {path: [], text: el.textContent, show: !el.classList.contains('tracy-collapsed')};
+					do {
+						item.path.unshift([].indexOf.call(el.parentNode.children, el));
+						el = el.parentNode;
+					} while (el && el !== baseEl);
+					return item;
+				});
+				sessionStorage.setItem('tracy-toggles-' + baseEl.id, JSON.stringify(toggles));
+			});
+		}
+
+
+		// finds next matching element
+		static nextElement(el, selector) {
+			while (el && selector && !el.matches(selector)) {
+				el = el.nextElementSibling;
+			}
+			return el;
+		}
+	}
+
+
+	Tracy = window.Tracy || {};
+	Tracy.Toggle = Tracy.Toggle || Toggle;
+})();
+	/**
+ * This file is part of the Tracy (https://tracy.nette.org)
+ */
+
+(function() {
+	const
+		COLLAPSE_COUNT = 7,
+		COLLAPSE_COUNT_TOP = 14;
+
+	class Dumper
+	{
+		static init(repository, context) {
+			if (repository) {
+				[].forEach.call((context || document).querySelectorAll('.tracy-dump[data-tracy-dump]'), function(el) {
+					try {
+						el.appendChild(build(JSON.parse(el.getAttribute('data-tracy-dump')), repository, el.classList.contains('tracy-collapsed')));
+						el.classList.remove('tracy-collapsed');
+						el.removeAttribute('data-tracy-dump');
+					} catch (e) {
+						if (!(e instanceof UnknownEntityException)) {
+							throw e;
+						}
+					}
+				});
+			}
+
+			if (Dumper.inited) {
+				return;
+			}
+			Dumper.inited = true;
+
+			// enables <span data-tracy-href=""> & ctrl key
+			document.documentElement.addEventListener('click', function(e) {
+				var el;
+				if (e.ctrlKey && (el = e.target.closest('[data-tracy-href]'))) {
+					location.href = el.getAttribute('data-tracy-href');
+					return false;
+				}
+			});
+
+			Tracy.Toggle.init();
+		}
+	}
+
+
+	function build(data, repository, collapsed, parentIds) {
+		var type = data === null ? 'null' : typeof data,
+			collapseCount = typeof collapsed === 'undefined' ? COLLAPSE_COUNT_TOP : COLLAPSE_COUNT;
+
+		if (type === 'null' || type === 'string' || type === 'number' || type === 'boolean') {
+			data = type === 'string' ? '"' + data + '"' : (data + '');
+			return createEl(null, null, [
+				createEl(
+					'span',
+					{'class': 'tracy-dump-' + type.replace('ean', '')},
+					[data + '\n']
+				)
+			]);
+
+		} else if (Array.isArray(data)) {
+			return buildStruct(
+				[
+					createEl('span', {'class': 'tracy-dump-array'}, ['array']),
+					' (' + (data[0] && data.length || '') + ')'
+				],
+				' [ ... ]',
+				data[0] === null ? null : data,
+				collapsed === true || data.length >= collapseCount,
+				repository,
+				parentIds
+			);
+
+		} else if (type === 'object' && data.number) {
+			return createEl(null, null, [
+				createEl('span', {'class': 'tracy-dump-number'}, [data.number + '\n'])
+			]);
+
+		} else if (type === 'object' && data.type) {
+			return createEl(null, null, [
+				createEl('span', null, [data.type + '\n'])
+			]);
+
+		} else if (type === 'object') {
+			var id = data.object || data.resource,
+				object = repository[id];
+
+			if (!object) {
+				throw new UnknownEntityException;
+			}
+			parentIds = parentIds || [];
+			var recursive = parentIds.indexOf(id) > -1;
+			parentIds.push(id);
+
+			return buildStruct(
+				[
+					createEl('span', {
+						'class': data.object ? 'tracy-dump-object' : 'tracy-dump-resource',
+						title: object.editor ? 'Declared in file ' + object.editor.file + ' on line ' + object.editor.line : null,
+						'data-tracy-href': object.editor ? object.editor.url : null
+					}, [object.name]),
+					' ',
+					createEl('span', {'class': 'tracy-dump-hash'}, ['#' + id])
+				],
+				' { ... }',
+				object.items,
+				collapsed === true || recursive || (object.items && object.items.length >= collapseCount),
+				repository,
+				parentIds
+			);
+		}
+	}
+
+
+	function buildStruct(span, ellipsis, items, collapsed, repository, parentIds) {
+		var res, toggle, div, handler;
+
+		if (!items || !items.length) {
+			span.push(!items || items.length ? ellipsis + '\n' : '\n');
+			return createEl(null, null, span);
+		}
+
+		res = createEl(null, null, [
+			toggle = createEl('span', {'class': collapsed ? 'tracy-toggle tracy-collapsed' : 'tracy-toggle'}, span),
+			'\n',
+			div = createEl('div', {'class': collapsed ? 'tracy-collapsed' : ''})
+		]);
+
+		if (collapsed) {
+			toggle.addEventListener('tracy-toggle', handler = function() {
+				toggle.removeEventListener('tracy-toggle', handler);
+				createItems(div, items, repository, parentIds);
+			});
+		} else {
+			createItems(div, items, repository, parentIds);
+		}
+		return res;
+	}
+
+
+	function createEl(el, attrs, content) {
+		if (!(el instanceof Node)) {
+			el = el ? document.createElement(el) : document.createDocumentFragment();
+		}
+		for (var id in attrs || {}) {
+			if (attrs[id] !== null) {
+				el.setAttribute(id, attrs[id]);
+			}
+		}
+		content = content || [];
+		for (id = 0; id < content.length; id++) {
+			var child = content[id];
+			if (child !== null) {
+				el.appendChild(child instanceof Node ? child : document.createTextNode(child));
+			}
+		}
+		return el;
+	}
+
+
+	function createItems(el, items, repository, parentIds) {
+		for (var i = 0; i < items.length; i++) {
+			var vis = items[i][2];
+			createEl(el, null, [
+				createEl('span', {'class': 'tracy-dump-key'}, [items[i][0]]),
+				vis ? ' ' : null,
+				vis ? createEl('span', {'class': 'tracy-dump-visibility'}, [vis === 1 ? 'protected' : 'private']) : null,
+				' => ',
+				build(items[i][1], repository, null, parentIds)
+			]);
+		}
+	}
+
+
+	function UnknownEntityException() {}
+
+
+	Tracy = window.Tracy || {};
+	Tracy.Dumper = Dumper;
+})();
+	/**
+ * This file is part of the Tracy (https://tracy.nette.org)
+ */
+
+(function(){
+	class BlueScreen
+	{
+		static init(ajax) {
+			var blueScreen = document.getElementById('tracy-bs');
+
+			for (var i = 0, styles = []; i < document.styleSheets.length; i++) {
+				var style = document.styleSheets[i];
+				if (!style.ownerNode.classList.contains('tracy-debug')) {
+					style.oldDisabled = style.disabled;
+					style.disabled = true;
+					styles.push(style);
+				}
+			}
+
+			document.getElementById('tracy-bs-toggle').addEventListener('tracy-toggle', function() {
+				var collapsed = this.classList.contains('tracy-collapsed');
+				for (i = 0; i < styles.length; i++) {
+					styles[i].disabled = collapsed ? styles[i].oldDisabled : true;
+				}
+			});
+
+			if (!ajax) {
+				document.body.appendChild(blueScreen);
+				var id = location.href + document.getElementById('tracy-bs-error').textContent;
+				Tracy.Toggle.persist(blueScreen, sessionStorage.getItem('tracy-toggles-bskey') === id);
+				sessionStorage.setItem('tracy-toggles-bskey', id);
+			}
+
+			if (inited) {
+				return;
+			}
+			inited = true;
+
+			// enables toggling via ESC
+			document.addEventListener('keyup', function(e) {
+				if (e.keyCode === 27 && !e.shiftKey && !e.altKey && !e.ctrlKey && !e.metaKey) { // ESC
+					Tracy.Toggle.toggle(document.getElementById('tracy-bs-toggle'));
+				}
+			});
+		}
+
+
+		static loadAjax(content, dumps) {
+			var ajaxBs = document.getElementById('tracy-bs');
+			if (ajaxBs) {
+				ajaxBs.parentNode.removeChild(ajaxBs);
+			}
+			document.body.insertAdjacentHTML('beforeend', content);
+			ajaxBs = document.getElementById('tracy-bs');
+			Tracy.Dumper.init(dumps, ajaxBs);
+			BlueScreen.init(true);
+			window.scrollTo(0, 0);
+		}
+	}
+
+	var inited;
+
+
+	Tracy = window.Tracy || {};
+	Tracy.BlueScreen = BlueScreen;
+})();
+})();
+</script>
+<script>
+Tracy && Tracy.Dumper.init({"01":{"name":"App\\CoreModule\\Model\\ItemManager","editor":{"file":"C:\\xampp\\htdocs\\Records_nette\\app\\CoreModule\\model\\ItemManager.php","line":16,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Capp%5CCoreModule%5Cmodel%5CItemManager.php&line=16&search=&replace="},"items":[["database",{"object":"02"},1]]},"02":{"name":"Nette\\Database\\Context","editor":{"file":"C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\database\\src\\Database\\Context.php","line":17,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Cdatabase%5Csrc%5CDatabase%5CContext.php&line=17&search=&replace="},"items":[["connection",{"object":"03"},2],["structure",{"object":"04"},2],["conventions",{"object":"06"},2],["cacheStorage",{"object":"07"},2]]},"03":{"name":"Nette\\Database\\Connection","editor":{"file":"C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\database\\src\\Database\\Connection.php","line":18,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Cdatabase%5Csrc%5CDatabase%5CConnection.php&line=18&search=&replace="},"items":[["onConnect",null,0],["onQuery",[null],0],["params",[null],2],["options",[null],2],["driver",null,2],["preprocessor",null,2],["pdo",null,2]]},"04":{"name":"Nette\\Database\\Structure","editor":{"file":"C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\database\\src\\Database\\Structure.php","line":16,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Cdatabase%5Csrc%5CDatabase%5CStructure.php&line=16&search=&replace="},"items":[["connection",{"object":"03"},1],["cache",{"object":"05"},1],["structure",null,1],["isRebuilt",false,1]]},"05":{"name":"Nette\\Caching\\Cache","editor":{"file":"C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\caching\\src\\Caching\\Cache.php","line":16,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Ccaching%5Csrc%5CCaching%5CCache.php&line=16&search=&replace="}},"06":{"name":"Nette\\Database\\Conventions\\DiscoveredConventions","editor":{"file":"C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\database\\src\\Database\\Conventions\\DiscoveredConventions.php","line":17,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Cdatabase%5Csrc%5CDatabase%5CConventions%5CDiscoveredConventions.php&line=17&search=&replace="},"items":[["structure",{"object":"04"},1]]},"07":{"name":"Nette\\Caching\\Storages\\FileStorage","editor":{"file":"C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\caching\\src\\Caching\\Storages\\FileStorage.php","line":17,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Ccaching%5Csrc%5CCaching%5CStorages%5CFileStorage.php&line=17&search=&replace="},"items":[["dir","C:\\xampp\\htdocs\\Records_nette\\app\/..\/temp\/cache",2],["useDirs",true,2],["journal",{"object":"08"},2],["locks",null,2]]},"08":{"name":"Nette\\Caching\\Storages\\SQLiteJournal","editor":{"file":"C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\caching\\src\\Caching\\Storages\\SQLiteJournal.php","line":17,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Ccaching%5Csrc%5CCaching%5CStorages%5CSQLiteJournal.php&line=17&search=&replace="}},"09":{"name":"Nette\\Bridges\\ApplicationDI\\PresenterFactoryCallback","editor":{"file":"C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\application\\src\\Bridges\\ApplicationDI\\PresenterFactoryCallback.php","line":17,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Capplication%5Csrc%5CBridges%5CApplicationDI%5CPresenterFactoryCallback.php&line=17&search=&replace="},"items":[["container",{"object":"010"},2],["invalidLinkMode",5,2],["touchToRefresh","C:\\xampp\\htdocs\\Records_nette\\app\/..\/temp\/cache\/Nette%5CBridges%5CApplicationDI%5CApplicationExtension",2]]},"010":{"name":"Container_f550f6e760","editor":{"file":"C:\\xampp\\htdocs\\Records_nette\\temp\\cache\\Nette.Configurator\\Container_f550f6e760.php","line":5,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Ctemp%5Ccache%5CNette.Configurator%5CContainer_f550f6e760.php&line=5&search=&replace="},"items":[["meta",[["types",[null]],["services",[null]],["tags",[null]],["aliases",[null]]],1],["parameters",[["appDir","C:\\xampp\\htdocs\\Records_nette\\app"],["wwwDir","C:\\xampp\\htdocs\\Records_nette\\www"],["debugMode",true],["productionMode",false],["consoleMode",false],["tempDir","C:\\xampp\\htdocs\\Records_nette\\app\/..\/temp"],["defaultItemUrl","uvod"],["contactEmail","admin@localhost.cz"]],0],["registry",[["\"tracy.bar\"",{"object":"011"}],["\"http.response\"",{"object":"012"}],["\"http.requestFactory\"",{"object":"013"}],["\"http.request\"",{"object":"014"}],["\"session.session\"",{"object":"015"}],["\"tracy.logger\"",{"object":"016"}],["\"mail.mailer\"",{"object":"017"}],["\"application.presenterFactory\"",{"object":"018"}],["\"routing.router\"",{"object":"019"}],["\"application.application\"",{"object":"020"}],["\"tracy.blueScreen\"",{"object":"021"}],["\"database.default.connection\"",{"object":"03"}],["\"cache.journal\"",{"object":"08"}],["\"cache.storage\"",{"object":"07"}],["\"database.default.structure\"",{"object":"04"}],["\"database.default.conventions\"",{"object":"06"}],["\"database.default.context\"",{"object":"02"}],["25_App_CoreModule_Model_ItemManager",{"object":"01"}]],2],["creating",[],2]]},"011":{"name":"Tracy\\Bar","editor":{"file":"C:\\xampp\\htdocs\\Records_nette\\vendor\\tracy\\tracy\\src\\Tracy\\Bar.php","line":14,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Ctracy%5Ctracy%5Csrc%5CTracy%5CBar.php&line=14&search=&replace="}},"012":{"name":"Nette\\Http\\Response","editor":{"file":"C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\http\\src\\Http\\Response.php","line":19,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Chttp%5Csrc%5CHttp%5CResponse.php&line=19&search=&replace="}},"013":{"name":"Nette\\Http\\RequestFactory","editor":{"file":"C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\http\\src\\Http\\RequestFactory.php","line":17,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Chttp%5Csrc%5CHttp%5CRequestFactory.php&line=17&search=&replace="}},"014":{"name":"Nette\\Http\\Request","editor":{"file":"C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\http\\src\\Http\\Request.php","line":30,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Chttp%5Csrc%5CHttp%5CRequest.php&line=30&search=&replace="}},"015":{"name":"Nette\\Http\\Session","editor":{"file":"C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\http\\src\\Http\\Session.php","line":16,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Chttp%5Csrc%5CHttp%5CSession.php&line=16&search=&replace="}},"016":{"name":"Tracy\\Logger","editor":{"file":"C:\\xampp\\htdocs\\Records_nette\\vendor\\tracy\\tracy\\src\\Tracy\\Logger.php","line":14,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Ctracy%5Ctracy%5Csrc%5CTracy%5CLogger.php&line=14&search=&replace="},"items":[["directory","C:\\xampp\\htdocs\\Records_nette\\app\/..\/log",0],["email",null,0],["fromEmail",null,0],["emailSnooze","2 days",0],["mailer",[[0,{"object":"026"}],[1,"send"]],0],["blueScreen",{"object":"021"},2]]},"017":{"name":"Nette\\Mail\\SendmailMailer","editor":{"file":"C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\mail\\src\\Mail\\SendmailMailer.php","line":16,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Cmail%5Csrc%5CMail%5CSendmailMailer.php&line=16&search=&replace="}},"018":{"name":"Nette\\Application\\PresenterFactory","editor":{"file":"C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\application\\src\\Application\\PresenterFactory.php","line":16,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Capplication%5Csrc%5CApplication%5CPresenterFactory.php&line=16&search=&replace="}},"019":{"name":"Nette\\Application\\Routers\\RouteList","editor":{"file":"C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\application\\src\\Application\\Routers\\RouteList.php","line":16,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Capplication%5Csrc%5CApplication%5CRouters%5CRouteList.php&line=16&search=&replace="}},"020":{"name":"Nette\\Application\\Application","editor":{"file":"C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\application\\src\\Application\\Application.php","line":16,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Capplication%5Csrc%5CApplication%5CApplication.php&line=16&search=&replace="}},"021":{"name":"Tracy\\BlueScreen","editor":{"file":"C:\\xampp\\htdocs\\Records_nette\\vendor\\tracy\\tracy\\src\\Tracy\\BlueScreen.php","line":14,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Ctracy%5Ctracy%5Csrc%5CTracy%5CBlueScreen.php&line=14&search=&replace="},"items":[["info",[[0,"PHP 5.6.4"],[1,"Apache\/2.4.3 (Win32) OpenSSL\/1.0.1c PHP\/5.6.4"],[2,"Tracy 2.5.1"]],0],["collapsePaths",[[0,"C:\/xampp\/htdocs\/Records_nette\/vendor"]],0],["maxDepth",3,0],["maxLength",150,0],["panels",[[0,{"object":"027"}],[1,{"object":"028"}],[2,{"object":"029"}],[3,"Nette\\Bridges\\DatabaseTracy\\ConnectionPanel::renderException"]],2],["actions",[[0,{"object":"030"}],[1,{"object":"031"}]],2]]},"022":{"name":"Nette\\Application\\Request","editor":{"file":"C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\application\\src\\Application\\Request.php","line":22,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Capplication%5Csrc%5CApplication%5CRequest.php&line=22&search=&replace="},"items":[["method","GET",2],["flags",[["secured",false]],2],["name","Core:Item",2],["params",[["action","list"],["url",null]],2],["post",[],2],["files",[],2]]},"023":{"name":"Nette\\MemberAccessException","editor":{"file":"C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\utils\\src\\Utils\\exceptions.php","line":57,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Cutils%5Csrc%5CUtils%5Cexceptions.php&line=57&search=&replace="},"items":[["message","Cannot write to an undeclared property App\\CoreModule\\Presenters\\ItemPresenter::$itemManager.",1],["string","",2],["code",0,1],["file","C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\utils\\src\\Utils\\ObjectHelpers.php",1],["line",45,1],["trace",[[0,[["file","C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\utils\\src\\Utils\\SmartObject.php"],["line",171],["function","strictSet"],["class","Nette\\Utils\\ObjectHelpers"],["type","::"],["args",[null]]]],[1,[["file","C:\\xampp\\htdocs\\Records_nette\\app\\CoreModule\\presenters\\ItemPresenter.php"],["line",35],["function","__set"],["class","Nette\\ComponentModel\\Component"],["type","->"],["args",[null]]]],[2,[["file","C:\\xampp\\htdocs\\Records_nette\\temp\\cache\\Nette.Configurator\\Container_f550f6e760.php"],["line",375],["function","__construct"],["class","App\\CoreModule\\Presenters\\ItemPresenter"],["type","->"],["args",[null]]]],[3,[["file","C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\di\\src\\DI\\Container.php"],["line",181],["function","createService__32_App_CoreModule_Presenters_ItemPresenter"],["class","Container_f550f6e760"],["type","->"],["args",[null]]]],[4,[["file","C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\application\\src\\Bridges\\ApplicationDI\\PresenterFactoryCallback.php"],["line",59],["function","createService"],["class","Nette\\DI\\Container"],["type","->"],["args",[null]]]],[5,[["function","__invoke"],["class","Nette\\Bridges\\ApplicationDI\\PresenterFactoryCallback"],["type","->"],["args",[null]]]],[6,[["file","C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\application\\src\\Application\\PresenterFactory.php"],["line",49],["function","call_user_func"],["args",[null]]]],[7,[["file","C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\application\\src\\Application\\Application.php"],["line",140],["function","createPresenter"],["class","Nette\\Application\\PresenterFactory"],["type","->"],["args",[null]]]],[8,[["file","C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\application\\src\\Application\\Application.php"],["line",83],["function","processRequest"],["class","Nette\\Application\\Application"],["type","->"],["args",[null]]]],[9,[["file","C:\\xampp\\htdocs\\Records_nette\\www\\index.php"],["line",6],["function","run"],["class","Nette\\Application\\Application"],["type","->"],["args",[null]]]]],2],["previous",null,2],["xdebug_message","\nNette\\MemberAccessException: Cannot write to an undeclared property App\\CoreModule\\Presenters\\ItemPresenter::$itemManager. in C:\\xampp\\htdocs\\R ... ",0]]},"024":{"name":"Nette\\Application\\Request","editor":null,"items":[["method","FORWARD",2],["flags",[],2],["name","Error",2],["params",[["exception",{"object":"023"}],["request",{"object":"022"}]],2],["post",[],2],["files",[],2]]},"025":{"name":"App\\Presenters\\ErrorPresenter","editor":null,"items":[["logger",{"object":"016"},2]]},"026":{"name":"Tracy\\Bridges\\Nette\\MailSender","editor":null,"items":[["mailer",{"object":"017"},2],["fromEmail",null,2]]},"027":{"name":"Closure","editor":null},"028":{"name":"Closure","editor":null},"029":{"name":"Closure","editor":null},"030":{"name":"Closure","editor":null},"031":{"name":"Closure","editor":null},"032":{"name":"Nette\\Security\\Identity","editor":{"file":"C:\\xampp\\htdocs\\Records_nette\\vendor\\nette\\security\\src\\Security\\Identity.php","line":20,"url":"editor:\/\/open\/?file=C%3A%5Cxampp%5Chtdocs%5CRecords_nette%5Cvendor%5Cnette%5Csecurity%5Csrc%5CSecurity%5CIdentity.php&line=20&search=&replace="},"items":[["id",3,2],["roles",[[0,"admin"]],2],["data",[["user_id",3],["username","Jaroslav Patrn\u00fd"],["role","admin"]],2]]}});
+</script>
+<script>
+Tracy && Tracy.BlueScreen.init();
+</script>
+</body>
+</html>

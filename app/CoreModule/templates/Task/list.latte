@@ -1,0 +1,19 @@
+{block title}List of items{/block}
+{block description}Výpis všech položek.{/block}
+{block content}
+<table>
+     <thead>    
+    <tr><th>Name</th><th>Description</th><th>Deadline</th><th>Done</th>{if $user->isInRole('admin')}<th colspan="2">Administration</th>
+    </tr>{/if}   
+ </thead>
+    <tbody n:foreach="$tasks as $task">
+        <tr>
+            <h2><a n:href="Task: $task->task_id"></a></h2>
+            <td>{$task->name}</td><td>{$task->description}</td><td>{$task->deadline|dateCzech}</td><td>{$task->done}</td>
+            <br/>
+            {if $user->isInRole('admin')}
+                <td><a n:href="editor $task->task_id">Edit</a></td>
+                <td><a n:href="remove $task->task_id" onClick="return confirm('Opravdu chcete smazat?');">Remove</a></td>
+            {/if}
+   </tr>  </tbody>       
+</table>
