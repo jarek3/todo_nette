@@ -38,18 +38,18 @@ class RouterFactory
 			]
 		]);
 		$router[] = new Route('<action>[/<url>]', [
-			'presenter' => 'Core:Item',
+			'presenter' => 'Core:Task',
 			'action' => [
 				Route::FILTER_STRICT => true,
 				Route::FILTER_TABLE => [
 					// řetězec v URL => akce presenteru
-					'seznam-polozek' => 'list',
+					'seznam-ukolu' => 'list',
 					'editor' => 'editor',
 					'odstranit' => 'remove'
 				]
 			]
 		]);
-		$router[] = new Route('[<url>]', 'Core:Item:default');
+		$router[] = new Route('[<url>]', 'Core:Task:default');
 		return $router;
 	}
 }

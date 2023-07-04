@@ -2,7 +2,7 @@
 # Konfigurační soubor pro CoreModule.
 #
 parameters:
-	defaultItemUrl: uvod          # URL výchozí položky
+	defaultTaskUrl: uvod          # URL výchozí položky
 	contactEmail: admin@localhost.cz # Kontaktní email
 
 
@@ -13,21 +13,21 @@ services:
 		setup:
 			# Zdroje CoreModule.
 			- addResource(Core:Administration)
-			- addResource(Core:Item)
+			- addResource(Core:Task)
 			- addResource(Core:Contact)
 
 			# Pravidla přístupu.
 			- allow(guest, Core:Administration, login)
 			- allow(guest, Core:Administration, register)
-			- allow(guest, Core:Item, default)
-			- allow(guest, Core:Item, list)
+			- allow(guest, Core:Task, default)
+			- allow(guest, Core:Task, list)
 			- allow(guest, Core:Contact)
 			- allow(member, Core:Administration, default)
 			- allow(member, Core:Administration, logout)
 
 	# Definice vlastních služeb dále přístupných pomocí DI.
-	- App\CoreModule\Model\ItemManager
+	- App\CoreModule\Model\TaskManager
 
 	# Předání nastavení při vytváření služeb presenterů.
-	- App\CoreModule\Presenters\ItemPresenter(%defaultItemUrl%)
+	- App\CoreModule\Presenters\TaskPresenter(%defaultTaskUrl%)
 	- App\CoreModule\Presenters\ContactPresenter(%contactEmail%)

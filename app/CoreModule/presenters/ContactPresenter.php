@@ -40,15 +40,15 @@ class ContactPresenter extends BasePresenter
     protected function createComponentContactForm()
     {
         $form = new Form;
-        $form->getElementPrototype()->setAttribute('novalidate', true);
-        $form->addEmail('email', 'Vaše emailová adresa')->setRequired();
-        $form->addText('y', 'Zadejte aktuální rok')->setOmitted()->setRequired()
-            ->addRule(Form::EQUAL, 'Chybně vyplněný antispam.', date("Y"));
-        $form->addTextArea('message', 'Zpráva')->setRequired()
-            ->addRule(Form::MIN_LENGTH, 'Zpráva musí být minimálně %d znaků dlouhá.', 10);
-        $form->addSubmit('send', 'Odeslat');
+        $form ->getElementPrototype()->setAttribute('novalidate', true);
+        $form ->addEmail('email', 'Your email address')->setRequired();
+        $form ->addText('y', 'Enter the current year')->setOmitted()->setRequired()
+              ->addRule(Form::EQUAL, 'Antispam filled in incorrectly.', date("Y"));
+        $form ->addTextArea('message', 'Message')->setRequired()
+              ->addRule(Form::MIN_LENGTH, 'The message must be at least %d characters long.', 10);
+        $form ->addSubmit('send', 'Submit');
 
-        // Funkce se vykonaná při úspěšném odeslání kontaktního formuláře a odešle email.
+        // Funkce se vykoná při úspěšném odeslání kontaktního formuláře a odešle email.
         $form->onSuccess[] = function (Form $form, ArrayHash $values) {
             try {
                 $mail = new Message;
@@ -57,10 +57,10 @@ class ContactPresenter extends BasePresenter
                     ->setSubject('Email z webu')
                     ->setBody($values->message);
                 $this->mailer->send($mail);
-                $this->flashMessage('Email byl úspěšně odeslán.');
+                $this->flashMessage('Email has been sent successfully, we will reply you soon.');
                 $this->redirect('this');
             } catch (SendException $e) {
-                $this->flashMessage('Email se nepodařilo odeslat.');
+                $this->flashMessage('Email failed to send.');
             }
         };
 

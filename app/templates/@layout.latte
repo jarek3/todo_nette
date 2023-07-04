@@ -20,7 +20,7 @@
 
     <body>
 	<header>
-		<h1>Elektronická evidence osob v Nette</h1>
+		<h1> Todo by Nette </h1>
 	</header>
 
 	{* Výpis flash zpráv. *}
@@ -28,30 +28,27 @@
 
 	<nav>
             <ul>				
-		<li><a n:href=:Core:Item:list>Seznam položek</a></li>
-		<li><a n:href=:Core:Contact:>Kontakt</a></li>
-                <li><a n:href=:Core:Administration:>Administrace</a></li>
+		<li><a n:href=:Core:Task:list>List of tasks</a></li>
+		<li><a n:href=:Core:Contact:>Contact</a></li>
+                <li><a n:href=:Core:Administration:>Administration</a></li>
             </ul>
 	</nav>
 	<br clear="both">
 
-	<item>
+	<task>
 		<header>
                     <h1>{include title}</h1>
 		</header>
 		<section>
                     {include content} {* Vložení obsahu do šablony. *}
 		</section>
-	</item>
+	</task>
 
 	<footer>
 		<p>
-                     <a n:href=:Core:Administration:>Administrace</a> 							
+                     <a n:href=:Core:Administration:>Administration</a>
 		</p>
-                
-                <p>
-                     <a href="http://www.itnetwork.cz" target="_blank">itnetwork.cz</a>
-                </p>   
+
 	</footer>
 
 	{block scripts}

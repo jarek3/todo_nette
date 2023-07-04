@@ -44,7 +44,7 @@ class ErrorPresenter implements IPresenter
 
         // Pokud jde o chybu v dotazu, vrať jako odpověď přesměrování na vlastní chybovou stránku.
         if ($e instanceof BadRequestException)
-            return new ForwardResponse($request->setPresenterName('Core:Item')->setParameters(['url' => 'chyba']));
+            return new ForwardResponse($request->setPresenterName('Core:Task')->setParameters(['url' => 'chyba']));
 
         // Jinak se jedná o chybu serveru.
         $this->logger->log($e, ILogger::EXCEPTION); // Loguje výjimku.
