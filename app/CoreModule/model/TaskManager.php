@@ -78,7 +78,7 @@ class TaskManager extends DatabaseManager
 	public function saveTask($task)
         {   
             $task['deadline']=$this->datumDb($task['deadline']);
-            if (empty($task[self::COLUMN_ID]))
+            if (!empty($task[self::COLUMN_ID]))
               {
                 unset($task[self::COLUMN_ID]);
 			$this->database->table(self::TABLE_NAME)->insert($task);
